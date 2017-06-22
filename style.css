@@ -62,12 +62,16 @@ input,select,textarea{
 .logo{position:relative;
 	  z-index:123;
 	  padding:10px;
-	  font:18px verdana;
-	  color:#6DDB07;
+	  /*font:18px verdana;
+	  color:#6DDB07;*/
 	  float:left;
-	  width:15%}
+	  width:15%;
+	  display: none;}
 
 .logo a{color:#6DDB07;}
+
+.logo img { width: 100px;
+			height: auto;}
 
 nav{position:relative;
 	width:980px;
@@ -143,23 +147,59 @@ nav{position:relative;
 #cssmenu li:hover > ul{left:auto;}
 #cssmenu li:hover > ul > li{height:35px;}
 #cssmenu ul ul ul{margin-left:100%;top:0;}
-#cssmenu ul ul li a{border-bottom:1px solid rgba(150,150,150,0.15);padding:11px 15px;width:170px;font-size:12px;text-decoration:none;color:#ddd;font-weight:400;}
+#cssmenu ul ul li a{border-bottom:1px solid rgba(150,150,150,0.15);
+	padding:11px 15px;
+	width:170px;
+	font-size:12px;
+	text-decoration:none;
+	color:#ddd;
+	font-weight:400;}
 #cssmenu ul ul li:last-child > a,#cssmenu ul ul li.last-item > a{border-bottom:0}
 #cssmenu ul ul li:hover > a,#cssmenu ul ul li a:hover{color:#fff}
-#cssmenu ul ul li.has-sub > a:after{position:absolute;top:16px;right:11px;width:8px;height:2px;display:block;background:#ddd;content:''}
-#cssmenu ul ul li.has-sub > a:before{position:absolute;top:13px;right:14px;display:block;width:2px;height:8px;background:#ddd;content:'';-webkit-transition:all .25s ease;-ms-transition:all .25s ease;transition:all .25s ease}
+#cssmenu ul ul li.has-sub > a:after{position:absolute;
+	top:16px;
+	right:11px;
+	width:8px;
+	height:2px;
+	display:block;
+	background:#ddd;
+	content:''}
+#cssmenu ul ul li.has-sub > a:before{position:absolute;
+	top:13px;
+	right:14px;
+	display:block;
+	width:2px;
+	height:8px;
+	background:#ddd;
+	content:'';-webkit-transition:all .25s ease;
+	-ms-transition:all .25s ease;
+	transition:all .25s ease}
 #cssmenu ul ul > li.has-sub:hover > a:before{top:17px;height:0}
 #cssmenu ul ul li.has-sub:hover,#cssmenu ul li.has-sub ul li.has-sub ul li:hover{background:#363636;}
 #cssmenu ul ul ul li.active a{border-left:1px solid #333}
 #cssmenu > ul > li.has-sub > ul > li.active > a,#cssmenu > ul ul > li.has-sub > ul > li.active> a{border-top:1px solid #333}
 
 @media screen and (max-width:1000px){
-.logo{position:absolute;top:0;left: 0;width:100%;height:46px;text-align:center;padding:10px 0 0 0 ;float:none}
+.logo{position:absolute;
+		display: block;
+	top:0;
+	left: 0;
+	width:20%;
+	height:46px;
+	text-align:center;
+	padding:0px 0 0 0 ;
+	
+	float:none}
+
+.logo img { padding: 10px 0px 10px 10px;}
+	
 .logo2{display:none}
 nav{width:100%;}
 #cssmenu{width:100%}
-#cssmenu ul{width:100%;display:none}
-#cssmenu ul li{width:100%;border-top:1px solid #444}
+#cssmenu ul{width:100%;
+	display:none}
+#cssmenu ul li{width:100%;
+	border-top:1px solid #444;}
 #cssmenu ul li:hover{background:#363636;}
 #cssmenu ul ul li,#cssmenu li:hover > ul > li{height:auto}
 #cssmenu ul li a,#cssmenu ul ul li a{width:100%;border-bottom:0}
@@ -190,3 +230,13 @@ nav{width:100%;}
 #cssmenu ul ul ul li.active a{border-left:none}
 #cssmenu > ul > li.has-sub > ul > li.active > a,#cssmenu > ul ul > li.has-sub > ul > li.active > a{border-top:none}
 }
+
+/*-----------------LAYOUT---------------------*/
+
+#cabecera { min-height: 1px; }
+
+.logoweb { display: none;}
+
+
+
+
