@@ -92,8 +92,8 @@ nav{position:relative;
 
 #cssmenu #head-mobile{display:none;}
 
-#cssmenu{font-family:sans-serif;
-	background:#333;}
+#cssmenu{font-family: 'Font';
+	background:#949493;}
 
 #cssmenu > ul > li{float:left;}
 
@@ -191,7 +191,7 @@ nav{position:relative;
 	
 	float:none}
 
-.logo img { padding: 10px 0px 10px 10px;}
+.logo img { padding: 2px 0px 0px 10px;}
 	
 .logo2{display:none}
 nav{width:100%;}
@@ -230,11 +230,35 @@ nav{width:100%;}
 #cssmenu ul ul ul li.active a{border-left:none}
 #cssmenu > ul > li.has-sub > ul > li.active > a,#cssmenu > ul ul > li.has-sub > ul > li.active > a{border-top:none}
 }
+/*----------------TIPOGRAFIAS------------------*/
+
+@font-face {
+    font-family: 'Font';
+    src: url('fonts/font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+h1 {  }
+h2 {  }
+h3 { color: white;
+     font-size: 2em;
+     text-align: left;}
+
+h4 { color: white;
+     font-size: 1.5em;
+     text-align: left; 
+     padding-bottom: 10px;}
+h5 {  }
+h6 {  }
+
 
 /*-------------------Flex----------------------*/
 .flex { display: flex; }
 
-/*-----------------LAYOUT---------------------*/
+/*------------------LAYOUT---------------------*/
 
 #cabecera { min-height: 1px; }
 
@@ -248,11 +272,15 @@ nav{width:100%;}
 	   min-height: 400px;
 	   background-image: url(img/ejemplo.jpg);
 	   background-size: 100%;
-       background-color: blue;}
+       background-color: blue;
+       padding: 10px 0px 10px 30px;
+       box-sizing: border-box;
+       }
 
 .contenido { width: 100%;
 			 min-height: 200px;
 	         background-color: red;
+             padding: 10px 0px;
 	         
 			 }
 
@@ -266,12 +294,8 @@ nav{width:100%;}
 .ofertas { width: 100%;
 		   min-height: 240px;
            background-color: gray;
-	       flex-flow: column;
-	
-		   }
-
-section.ofertas .item { flex:1;  }
-
+	      	   }
+.item { width: 100%; }
 
 
 #pie { width: 100%;
@@ -280,9 +304,6 @@ section.ofertas .item { flex:1;  }
 	    flex-flow: column;
 	    
 		}
-
-.flex { display: flex;}
-
 
 #pie .item { flex: 1;
 		     align-self:flex-start;
