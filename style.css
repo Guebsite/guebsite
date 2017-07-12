@@ -92,6 +92,8 @@ h6 {  }
            overflow: hidden;
             }
 
+.logocel { display: none; }
+
 .menu-btn {
   display: block;
   width: 30px;
@@ -212,6 +214,19 @@ input[type=checkbox]:checked ~ #menu{
     
     #ham label { float: right;     }
     
+    .logocel { width: 100px;
+               display: block;
+               min-height: 1px;
+               margin:0px;
+               position: relative;
+               top: 5px;
+               left: 8px;}
+
+     .logocel img { display: block;
+               float: left;
+               width: 100px;
+               height: auto;}
+    
     /*Make dropdown links appear inline*/
     ul {
         position: static;
@@ -235,6 +250,7 @@ input[type=checkbox]:checked ~ #menu{
     li a { border-bottom: 1px solid rgba(255, 255, 255, 0.1);
            text-align: left;
            padding-left: 1em;}
+    
     /*Display 'show menu' link*/
     .show-menu {
         display:block;
@@ -245,8 +261,10 @@ input[type=checkbox]:checked ~ #menu{
 
 
 /*-------------------Flex----------------------*/
-.flex { display: flex; }
+.flex { display: flex; 
+        flex-flow: column;}
 
+.item { flex: auto; }
 /*------------------LAYOUT---------------------*/
 
 #cabecera { min-height: 1px; }
@@ -269,7 +287,7 @@ input[type=checkbox]:checked ~ #menu{
 .contenido { width: 100%;
 			 min-height: 200px;
 	         
-             padding: 10px 10px 20px 10px;
+             padding: 10px 10px 25px 10px;
              box-sizing: border-box;
 	         
 			 }
@@ -278,7 +296,8 @@ input[type=checkbox]:checked ~ #menu{
 
 .articulo p { font-family: 'Font';
               font-size: 1.2em;
-              padding-bottom: 15px;}
+              padding-bottom: 20px;
+              line-height: 1.6;}
 
 .btnart, .btnofer {     box-sizing: border-box;
                         font-family: 'Font';
@@ -324,7 +343,7 @@ input[type=checkbox]:checked ~ #menu{
             width: 90%;
             font-family: 'Font';
             font-size: 1.2em;
-            text-align: justify;
+            text-align: left;
             padding-bottom: 15px;
             margin: auto;
             }
@@ -337,7 +356,6 @@ input[type=checkbox]:checked ~ #menu{
             margin: auto;
             width: 90%;
 }
-
 
 
 #pie { width: 100%;
@@ -358,6 +376,25 @@ input[type=checkbox]:checked ~ #menu{
 
 /*----------------MEDIA QUERIES----------------*/
 
+/*480 breakpoint*/
+@media only screen and (min-width: 480px) {
+    
+    .oferta { padding: 20px 50px 20px 50px; }
+    
+}
+
+/*600 breakpoint*/
+@media only screen and (min-width: 600px) {
+    
+    .oferta { padding: 20px 120px 20px 120px; }
+    
+}
+/*768 breakpoint*/
+@media only screen and (min-width: 768px) {
+    
+    
+    
+}
 
 
 
