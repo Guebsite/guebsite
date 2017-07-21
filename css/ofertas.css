@@ -1,0 +1,85 @@
+/*Ofertas documento*/
+
+/*-------------------Flex----------------------*/
+.flex { display: flex; 
+        flex-flow: column;}
+
+/*.item { flex: auto; }*/
+
+
+/*ya se encuentra en el otro documento*/
+.btnofer {     box-sizing: border-box;
+                        font-family: 'Font';
+                        display: block;
+                        width: 60%;
+                        min-height: 1px;
+                        text-align: center;
+                        border-radius: 5px;
+                        padding:10px;
+                        color:white;
+                        text-decoration: none;
+                        background-color: #C97233;}
+/*ya esta en el documento*/
+.ofertas { width: 100%;
+		   min-height: 240px;
+           border-top: 20px #db2c26 solid;
+           padding: 15px 10px 15px 10px;
+            box-sizing: border-box;           
+	      	   }
+
+.item { width: 100%;
+        min-height: 1px;
+        }
+.oferta { width: 100%;
+          min-height: 1px;
+          padding: 10px;
+          box-sizing: border-box; }
+
+.oferta img { display: block;
+              width: 90%;
+              height: auto;
+              margin: auto;
+             }
+
+.oferta p { display: block;
+            width: 90%;
+            font-family: 'Font';
+            font-size: 1.2em;
+            text-align: left;
+            padding-bottom: 15px;
+            margin: auto;
+            }
+
+.oferta span { text-transform: uppercase;
+                }
+
+.btnofer { background-color: #db2c26;
+            text-transform: uppercase;
+            margin: auto;
+            width: 90%;
+}
+
+/*480 breakpoint*/
+@media only screen and (min-width: 480px) {
+    
+    
+    .oferta { padding: 20px 50px 20px 50px; }
+    
+}
+
+/*600 breakpoint*/
+@media only screen and (min-width: 600px) {
+    
+    
+        .oferta { padding: 20px 120px 20px 120px; }
+    
+    
+}
+
+/*1024 breakpoint*/
+@media only screen and (min-width: 1024px) {
+    
+   
+    
+}
+    
