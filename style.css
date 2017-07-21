@@ -328,9 +328,11 @@ input[type=checkbox]:checked ~ #menu{
            padding: 15px 10px 15px 10px;
            box-sizing: border-box;           
 	      	   }
-.bloque1d, .numerados { width: 100%;
-                        min-width: 1px;
-                        padding: 0px;}
+.bloque1d, .numerados, .bloque2p { width: 100%;
+                                   min-width: 1px;
+                                   padding: 0px;}
+
+.bloque1d { display: none;}
 
 .numerados a { display: block;
                width: 100%;
@@ -340,25 +342,45 @@ input[type=checkbox]:checked ~ #menu{
                color: #302c29;
                font-family: 'font'}
 
-.list { border-bottom: 1px solid rgba(48, 44, 41, 0.35); }
+.list { border-bottom: 1px solid rgba(48, 44, 41, 0.35);
+        padding-bottom: 10px;}
 
-.design { width: 100%;
-          min-height: 1px;
-          padding: 15px 10px 15px 10px;
-           box-sizing: border-box;}
+.design, .promo, .posicion, .lider, .cima  { width: 100%;
+                                             min-height: 1px;
+                                             padding: 15px 10px 15px 10px;
+                                             border-bottom: 1px solid rgba(48, 44, 41, 0.35);
+                                             box-sizing: border-box;}
 
-h4.symbold { display: block;
-             width: 80%;
-             min-height: 80px;
-             line-height: 6;
-             font-size: 3em;
-             text-shadow: 0px 0px 1px white;
-             text-align: center;
-             background-image: url(img/Icono_Lapiz.png);
-             background-size: 80%;
-             background-repeat: no-repeat;
-             background-position: center;
-             margin: auto;}
+h4.symbold, h4.symbolp, h4.symbolpos, h4.symbollid, h4.symbolcima { display: block;
+                                                                    width: 80%;
+                                                                    min-height: 80px;
+                                                                    line-height: 6;
+                                                                    font-size: 3em;
+                                                                    text-shadow: 0px 0px 1px white;
+                                                     text-align: center;
+                                                     background-image: url(img/Iconos_Lapiz.png);
+                                                     background-size: 80%;
+                                                     background-repeat: no-repeat;
+                                                     background-position: center;
+                                                    color: #DB2C26;
+                                                     margin: auto;}
+
+h4.symbolp { background-image: url(img/Iconos_Microfono.png); 
+             width: 90%;
+            }
+h4.symbolpos { background-image: url(img/Iconos_Mira.png); 
+             width: 90%;
+            }
+
+h4.symbollid { background-image: url(img/Iconos_Corona.png);
+               width: 98%;
+               line-height: 10;                
+               font-size: 1.9em;}
+
+h4.symbolcima { background-image: url(img/Iconos_Mon.png);
+               width: 98%;
+               line-height: 12; 
+               font-size: 1.5em;  }
 
 .bloque2d p { font-family: 'Font';
               font-size: 1.2em;
@@ -511,9 +533,10 @@ span.copy a { color:#db2c26; }
 /*600 breakpoint*/
 @media only screen and (min-width: 600px) {
     
-    .btnart { width: 260px; }
+    .list, .design, .promo, .posicion, .lider, .cima { width: 60%;
+                                                       margin: auto;}
     
-
+    .btnart { width: 260px; }
     
     #pie { flex-flow: row wrap; }
     
@@ -527,9 +550,6 @@ span.copy a { color:#db2c26; }
     
    .footer-social-links { padding: 0px 40px 15px 40px; }
     
-   
-
-
     .footer1 { width: 50%;} 
     .footer2 { width: 50%;}  
     .footer3 { width: 50%;} 
@@ -558,6 +578,28 @@ span.copy a { color:#db2c26; }
                    height: auto;}
     
     li a { min-width: 158px;}
+    
+    .intro { display: flex;
+             flex-flow: row wrap;
+             justify-content: space-between;}
+    
+    .list { width: 100%;
+            }
+    h4.bloque1 { text-align: center; }
+    
+    .design, .promo, .posicion, .lider, .cima { width: 40%;
+                                                margin: auto;}
+    h4.symbolcima { width: 50%;
+                    line-height: 8;}
+    
+    h4.symbollid, h4.symbolcima { font-size: 2.3em; }
+    
+    .bcim p { display: block;
+                 width: 50%;
+                 margin: auto;}
+    .artcent { margin: auto; }
+    
+    .cima { width: 100%; }
     
     .footer-social-links { padding: 0px 130px 15px 130px; }
     #pie .item { height: 250px; }
@@ -590,8 +632,8 @@ span.copy a { color:#db2c26; }
     
 }
 
-/*1024 breakpoint*/
-@media only screen and (min-width: 1024px) {
+/*1280 breakpoint*/
+@media only screen and (min-width: 1280px) {
     
     
    #cabecera { width: 1024px;
@@ -612,15 +654,6 @@ span.copy a { color:#db2c26; }
 
 
 }
-
-
-
-
-
-
-
-
-
 
 /*
 .footer-social-links a{
