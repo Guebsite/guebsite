@@ -1,9 +1,10 @@
 @charset "UTF-8";
-/*  
-Description: Diseño, Desarrollo y Posicionamiento de sitios Web.
+/*
+Theme Name: Guebsite
+Theme URI: http://www.guebsite.com;
 Author: @ReynierNR
-Author URI: http://www.guebsite.com
-Version: 2.0
+Description: Plantilla Guebsite.
+Version: 1.0
 */
 
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,span{
@@ -103,6 +104,8 @@ h6 {  }
             }
 
 .logocel { display: none; }
+
+div.desc { display: none;}
 
 .menu-btn {
   display: block;
@@ -581,7 +584,7 @@ span.copy a { color:#db2c26; }
                    height: auto;}
     
     .tels { display: flex;
-            width: 500px;
+            width: 508px;
             float:right;
             padding-bottom: 10px;
             font-family: 'font';
@@ -590,12 +593,12 @@ span.copy a { color:#db2c26; }
             flex-flow: row wrap;}
     
     .tel1, .tel2 { padding-left: 20px;
-                   padding-right: 10px;
+                   padding-right: 5px;
                    text-decoration: none;
                    background-image: url(img/Cel-01.png);
                    background-repeat: no-repeat;
                    background-position: top left;
-                   background-size: 13%;
+                   background-size: 12%;
                    font-weight: bold;
                    color: #302c29;}
     

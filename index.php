@@ -1,24 +1,26 @@
 <!doctype html>
-<html>
+<html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Documento sin título</title>
-<link href="style.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="css/font-awesome.min.css">
+<meta name="author" content="R Nuñez Rondón">
+<title><?php bloginfo('name') ?></title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link href="<?php bloginfo('stylesheet_url') ?>" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/font-awesome.min.css">
 </head>
 
 <body>
 	<div id="contenedor">
 		<header id="cabecera">
 			<div class="logoweb">
-				<a href="index.html"><img src="img/guebsite-logo2.jpg" alt="Logotipo"></a>
+				<a href="index.html"><img src="<?php bloginfo('template_url') ?>/img/guebsite-logo2.jpg" alt="Guebsite Latinoamérica" title="<?php bloginfo('description') ?>"></a>
 			</div>
 			<div class="tels">
 			    <span class="now">Llámanos ahora:</span><a class="tel1" href="tel:+526441170372">+52 (644) 117 0372</a><a class="tel2" href="tel:+526441164048">+52 (644) 116-4048</a>			    
 			</div>									
 		<nav id="ham">
 		<div class="logocel">
-				<img src="img/logocel.png" alt="Logo Guebsite">
+				<img src="<?php bloginfo('template_url') ?>/img/logocel.png" alt="Logo Guebsite">
         </div>
   <label for="show-menu" class="show-menu">
    <span class="menu-btn"></span>
@@ -52,7 +54,7 @@
             </ul>
         </li>
         <li><a href="#">Servicio Global</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Soporte</a></li>
     </ul> 
    </nav> 
 					
@@ -167,7 +169,7 @@
 
 				</div>
 				<div class="item footer4">
-					<img src="img/Logo_G.png" alt="Guebsite Latinoamérica">
+					<img src="<?php bloginfo('template_url') ?>/img/Logo_G.png" alt="Guebsite Latinoamérica">
 					
 				</div>
       </footer>
