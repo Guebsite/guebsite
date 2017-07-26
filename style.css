@@ -320,6 +320,10 @@ input[type=checkbox]:checked ~ #menu{
                         text-decoration: none;
                         background-color: #C97233;}
 
+.btnempresa { width: 100%;
+              padding-top: 20px;
+              padding-bottom: 10px;}
+
 .articulo a:hover {  }
 
 
@@ -350,42 +354,19 @@ input[type=checkbox]:checked ~ #menu{
 .list { border-bottom: 1px solid rgba(48, 44, 41, 0.35);
         padding-bottom: 10px;}
 
-.design, .promo, .posicion, .lider, .cima  { width: 100%;
-                                             min-height: 1px;
-                                             padding: 15px 10px 15px 10px;
-                                             border-bottom: 1px solid rgba(48, 44, 41, 0.35);
-                                             box-sizing: border-box;}
+.design  { width: 100%;
+         min-height: 1px;
+         padding: 15px 10px 15px 10px;
+         border-bottom: 1px solid rgba(48, 44, 41, 0.35);
+         box-sizing: border-box;}
 
-h4.symbold, h4.symbolp, h4.symbolpos, h4.symbollid, h4.symbolcima { display: block;
-                                                                    width: 80%;
-                                                                    min-height: 80px;
-                                                                    line-height: 6;
-                                                                    font-size: 3em;
-                                                                    text-shadow: 0px 0px 1px white;
-                                                     text-align: center;
-                                                     background-image: url(img/Iconos_Lapiz.png);
-                                                     background-size: 80%;
-                                                     background-repeat: no-repeat;
-                                                     background-position: center;
-                                                    color: #DB2C26;
-                                                     margin: auto;}
+h4.symbold { display: block;
+             width: 100%;
+             font-size: 1.8em;
+             text-align: center;
+             color: #DB2C26;
+             margin: auto;}
 
-h4.symbolp { background-image: url(img/Iconos_Microfono.png); 
-             width: 90%;
-            }
-h4.symbolpos { background-image: url(img/Iconos_Mira.png); 
-             width: 90%;
-            }
-
-h4.symbollid { background-image: url(img/Iconos_Corona.png);
-               width: 98%;
-               line-height: 10;                
-               font-size: 1.9em;}
-
-h4.symbolcima { background-image: url(img/Iconos_Mon.png);
-               width: 98%;
-               line-height: 12; 
-               font-size: 1.5em;  }
 
 .bloque2d p { font-family: 'Font';
               font-size: 1.2em;
@@ -538,8 +519,7 @@ span.copy a { color:#db2c26; }
 /*600 breakpoint*/
 @media only screen and (min-width: 600px) {
     
-    .list, .design, .promo, .posicion, .lider, .cima { width: 60%;
-                                                       margin: auto;}
+    h4.symbold { font-size: 2.3em;}
     
     .btnart { width: 260px; }
     
@@ -615,19 +595,18 @@ span.copy a { color:#db2c26; }
             }
     h4.bloque1 { text-align: center; }
     
-    .design, .promo, .posicion, .lider, .cima { width: 40%;
-                                                margin: auto;}
+    .design { width: 45%;
+              margin: auto;}
+    
     h4.symbolcima { width: 50%;
                     line-height: 8;}
     
-    h4.symbollid, h4.symbolcima { font-size: 2.3em; }
+    h4.symbollid { font-size: 2.3em; }
     
-    .bcim p { display: block;
-                 width: 50%;
-                 margin: auto;}
+    
     .artcent { margin: auto; }
     
-    .cima { width: 100%; }
+   
     
     .footer-social-links { padding: 0px 130px 15px 130px; }
     #pie .item { height: 250px; }

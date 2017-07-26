@@ -13,7 +13,7 @@
 	<div id="contenedor">
 		<header id="cabecera">
 			<div class="logoweb">
-				<a href="index.html"><img src="<?php bloginfo('template_url') ?>/img/guebsite-logo2.jpg" alt="Guebsite Latinoamérica" title="<?php bloginfo('description') ?>"></a>
+				<a href="index.php"><img src="<?php bloginfo('template_url') ?>/img/guebsite-logo2.jpg" alt="Guebsite Latinoamérica" title="<?php bloginfo('description') ?>"></a>
 			</div>
 			<div class="tels">
 			    <span class="now">Llámanos ahora:</span><a class="tel1" href="tel:+526441170372">+52 (644) 117 0372</a><a class="tel2" href="tel:+526441164048">+52 (644) 116-4048</a>			    
@@ -78,64 +78,8 @@
 				</aside>			
 			</main>
 			<section class="intro">
-			
-				<div class="list">
-				    <h4 class="bloque1">¿Que hacemos por tu empresa ?</h1>
-				    <div class="bloque1d">
-				        <div class="numerados">
-				            <a href="#">1- Diseñarla</a>
-				            <a href="#">2- Darla a Conocer</a>
-				            <a href="#">3- Posicionarla en su Mercado</a>
-				            <a href="#">4- Convertirla en Líder</a>
-				            <a href="#">5- Mantenerla en la cima</a>
-				        </div>
-				    </div>				    
-				</div>
-				<div class="design">
-				      <h4 class="symbold">Diseñarla</h4>
-				      <div class="bloque2d">
-				          <article>
-				              <p>Diseñar la estrategia que se requiera para ubicarla en el mundo digital integrándola a una arquitectura eficiente que incluya su sitio web, mailing, redes sociales y redes de negocios.</p>
-				              
-				          </article>				          
-				      </div>			    
-				</div>
-				<div class="promo">
-				      <h4 class="symbolp">Promoverla</h4>
-				      <div class="bloque2d bpromo">
-				          <article>
-				              <p>Dar a conocer a tu empresa a través de los canales digitales adecuados a las demandas de tu mercado meta definidos por sus características demográficas, preferenciales, sociales y culturales.</p>
-				              
-				          </article>				          
-				      </div>			    
-				</div>
-				<div class="posicion">
-				      <h4 class="symbolpos">posicionarla</h4>
-				      <div class="bloque2d bpos">
-				          <article>
-				              <p>Dar a conocer a tu empresa a través de los canales digitales adecuados a las demandas de tu mercado meta definidos por sus características demográficas, preferenciales, sociales y culturales.</p>
-				              
-				          </article>				          
-				      </div>			    
-				</div>		
-				<div class="lider">
-				      <h4 class="symbollid">Convertirla en líder</h4>
-				      <div class="bloque2d bplid">
-				          <article>
-				              <p>Situarla en los canales digitales adecuados para que sea identificada, preferida y y reconocida por su mercado meta, apoyados en la investigación de sus respectivas preferencias.</p>
-				              
-				          </article>				          
-				      </div>			    
-				</div>
-				<div class="cima">
-				      <h4 class="symbolcima">Mantenerla en la cima</h4>
-				      <div class="bloque2d bcim">
-				          <article>
-				              <p>Una vez establecida su posición de liderazgo digital, mantendremos las actividades estratégicas adecuadas para que tu empresa se consolide en la cúspide de su gama.</p>
-				              <a class="btnart artcent" href="#">Leer más</a>
-				          </article>				          
-				      </div>			    
-				</div>
+			<?php include(TEMPLATEPATH.'/empresa.php');?>
+				
 			</section>		
 			
 		</div>
