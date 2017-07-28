@@ -4,7 +4,7 @@
 				    <h4 class="bloque1">¿Que hacemos por tu empresa ?</h4>
 				    
           </div>  
-              
+<?php query_posts('category_name=empresa') ?>              
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
 
                <div class="design">

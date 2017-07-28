@@ -5,7 +5,7 @@
 			
 			<main class="contenido">
 			
-			<?php query_posts('pagename=metas') ?>              
+			             
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
             <article class="articulo">
