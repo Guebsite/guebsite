@@ -272,6 +272,11 @@ input[type=checkbox]:checked ~ #menu{
     }
 }
 
+/*-------------------Flex----------------------*/
+.flex { display: flex; 
+        flex-flow: column;}
+
+/*.item { flex: auto; }*/
 
 /*------------------LAYOUT---------------------*/
 
@@ -311,7 +316,7 @@ input[type=checkbox]:checked ~ #menu{
 .btnart, .btnofer {     box-sizing: border-box;
                         font-family: 'Font';
                         display: block;
-                        width: 60%;
+                        width: 70%;
                         min-height: 1px;
                         text-align: center;
                         border-radius: 5px;
@@ -323,6 +328,38 @@ input[type=checkbox]:checked ~ #menu{
 .btnempresa { width: 100%;
               padding-top: 20px;
               padding-bottom: 10px;}
+
+.item { width: 100%;
+        min-height: 1px;
+        }
+.oferta { width: 100%;
+          min-height: 1px;
+          padding: 10px;
+          box-sizing: border-box; }
+
+.oferta img { display: block;
+              width: 90%;
+              height: auto;
+              margin: auto;
+             }
+
+.oferta p { display: block;
+            width: 90%;
+            font-family: 'Font';
+            font-size: 1.2em;
+            text-align: left;
+            padding-bottom: 15px;
+            margin: auto;
+            }
+
+.oferta span { text-transform: uppercase;
+                }
+
+.btnofer { background-color: #db2c26;
+            text-transform: uppercase;
+            margin: auto;
+            width: 90%;
+}
 
 .articulo a:hover {  }
 
@@ -360,13 +397,17 @@ input[type=checkbox]:checked ~ #menu{
          border-bottom: 1px solid rgba(48, 44, 41, 0.35);
          box-sizing: border-box;}
 
+img.post { display: block;
+           width: 250px;
+           height: auto;
+           margin: auto;}
+
 h4.symbold { display: block;
              width: 100%;
-             font-size: 1.8em;
+             font-size: 2.2em;
              text-align: center;
              color: #DB2C26;
              margin: auto;}
-
 
 .bloque2d p { font-family: 'Font';
               font-size: 1.2em;
@@ -512,6 +553,8 @@ span.copy a { color:#db2c26; }
 /*480 breakpoint*/
 @media only screen and (min-width: 480px) {
     
+    .oferta { padding: 20px 50px 20px 50px; }
+    
     #pie ul { padding-left: 100px;  }
     
 }
@@ -522,6 +565,8 @@ span.copy a { color:#db2c26; }
     h4.symbold { font-size: 2.3em;}
     
     .btnart { width: 260px; }
+    
+    .oferta { padding: 20px 120px 20px 120px; }
     
     #pie { flex-flow: row wrap; }
     
@@ -546,6 +591,8 @@ span.copy a { color:#db2c26; }
 /*768 breakpoint*/
 @media only screen and (min-width: 768px) {
     
+   .oferta { padding: 20px 190px 20px 190px; }
+    
   .footer-social-links { padding: 0px 100px 15px 100px; }  
     
   #pie ul {padding-left: 80px;}
@@ -554,6 +601,9 @@ span.copy a { color:#db2c26; }
 
 /*960 breakpoint*/
 @media only screen and (min-width: 960px) {
+    
+    .flex { flex-flow: row;}
+    .oferta { padding: 20px 0px 20px 0px; }
     
     .logoweb { display: block;
                float: left;

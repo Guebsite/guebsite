@@ -6,6 +6,7 @@
 <meta name="author" content="R Nuñez Rondón">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <link href="<?php bloginfo('stylesheet_url') ?>" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/ofertas.css">
 <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/font-awesome.min.css">
 <?php wp_head(); ?>  
 </head>
@@ -35,7 +36,7 @@
             <a href="<?php bloginfo('url') ?>/sitiosweb/">Sitios Web &#8595;</a>
             <ul class="hidden">
                 <li><a href="<?php bloginfo('url') ?>/sitiosweb/pdf-html/">Psd a Html</a></li>
-                <li><a href="<?php bloginfo('url') ?>/sitiosweb/hazlo-tu-mismo/">Hazlo Tu Mismo FREE</a></li>
+                <li><a href="<?php bloginfo('url') ?>/sitiosweb/haslo-tu-mismo-gratis/">Haslo Tu Mismo FREE</a></li>
                 <li><a href="<?php bloginfo('url') ?>/sitiosweb/construimos-tu-sitio-web/">Lo hacemos x Ti</a></li>
                 <li><a href="<?php bloginfo('url') ?>/sitiosweb/sitio-web-wordpress/">Sitio Web Wordpress</a></li>
             </ul>

@@ -1,24 +1,26 @@
 <footer id="pie" class="flex">
 			<div class="item footer1">
-					<h5>Sitios Web</h5>
-					<ul>
-					    <li><a href="#">&#8900; Construye tu sitio Free</a></li>
-					    <li><a href="#">&#8900; Lo hacemos x tí</a></li>
-					    <li><a href="#">&#8900; Sitio Web Wordpress</a></li>
-					    <li><a href="#">&#8900; PSD a HTML</a></li>
-					</ul>
+					<h5>Guebsite</h5>
+					<?php wp_nav_menu(array(
+                
+                        'theme_location'=> 'footer1',         
+                                        
+                ));           
+            ?>	
+					
 				</div>
 				<div class="item footer2">
 					<h5>Marketing</h5>
-					<ul>
-					    <li><a href="#">&#8900; Redes Sociales</a></li>
-					    <li><a href="#">&#8900; Mkt Pago x Click</a></li>
-					    <li><a href="#">&#8900; Posicionamiento Web (SEO)</a></li>
-					    <li><a href="#">&#8900; Planeación Estratégica</a></li>
-					</ul>
+					<?php wp_nav_menu(array(
+                
+                        'theme_location'=> 'footer2',         
+                                        
+                ));           
+            ?>	
+					
 				</div>
 				<div class="item footer3">
-					<h5>Redes</h5>
+					<h5>Síguenos</h5>
 				  <div class="footer-social-links">
   <a href="#" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
   <a href="#" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
