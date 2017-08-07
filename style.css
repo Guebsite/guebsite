@@ -48,14 +48,24 @@ input,select,textarea{
 .clearfix {
   display: block;
 }/**/
+
+.center { text-align:center;}
+  img.center, img [align="center"] { display:block; margin-left:auto; margin-right:auto;}
+  .alignleft {float:left;}
+  img.alignleft, img [align="left"] { float:left; margin:2px 10px 5px 0px;}
+  .alignright { float:right;}
+  img.alignright, img [align="right"] { float:right; margin:2px 0px 5px 10px;}
+  .clear { clear:both;}
+  hr.clear { clear:both; visibility:hidden; margin:0px; padding:0px; height:0px;}
+  article.content p { margin-bottom:12px; }
+
 /****************Aquí termina el reset******************/
 @media print{
   body, body *{
     font-family:Arial, Helvetica, sans-serif !important;
   }
-  .no-imprimir{
-    display:none !important;
-  }
+  .no-imprimir{     display:none !important;  }
+    
 }
 
 /*----------------TIPOGRAFIAS------------------*/
@@ -70,10 +80,11 @@ input,select,textarea{
 h1 {  }
 h2 {  }
 h3 { color: white;
-     font-size: 2em;
-     text-align: left;
-     font-weight: bold;
-     font-family: 'Font';}
+     font-size: 1.5em;
+     text-align: center;
+     font-family: 'Font';
+     padding-top: 180px;
+     padding-bottom: 15px;}
 
 h4 { color: #302c29;
      font-size: 2em;
@@ -290,19 +301,37 @@ input[type=checkbox]:checked ~ #menu{
 		  min-height: 1px;
 		  padding:0px;}
 
-.mkt { width: 100%;
-	   min-height: 400px;
-	   background-image: url(img/ejemplo.jpg);
-	   background-size: 100%;
-       background-color: blue;
-       padding: 10px 0px 10px 1em;
-       box-sizing: border-box;
+.mkt, .mktsitiow, .mktonline  { width: 100%;
+	                            min-height: 350px;
+	                            background-image: url(img/profesional.jpg);
+                                background-position: center;
+	                            background-color: blue;
+                                padding: 10px 0px 10px 0px;
+                                box-sizing: border-box;
        }
+
+.mktsitiow { background-image: url(img/sitiow.jpg); }
+.mktonline { background-image: url(img/onlinemkt.jpg); }
+
+
+.mkt a, .mktsitiow a, .mktonline a { display: block;
+                                     width: 200px;
+                                     line-height: 2;
+                                     margin: auto;
+                                     font-family: 'font';
+                                     text-align: center;
+                                     font-size: 1.3em;
+                                     color: white;}
+
+.mkt a:hover, .mkt a:active, .mktsitiow a:hover, .mktsitiow a:active, .mktonline a:hover, .mktonline a:active  { background-color: rgba(255, 255, 255, 0.2);}
+
+.mkt span.words, .mktsitiow span.words, .mktonline span.words  { font-weight: bold; }
 
 .contenido { width: 100%;
 			 min-height: 200px;
 	         padding: 10px 1em 25px 1em;
              box-sizing: border-box;
+             overflow: hidden;
 	         
 			 }
 
@@ -341,6 +370,7 @@ input[type=checkbox]:checked ~ #menu{
               width: 90%;
               height: auto;
               margin: auto;
+              padding-bottom: 15px;
              }
 
 .oferta p { display: block;
@@ -349,8 +379,18 @@ input[type=checkbox]:checked ~ #menu{
             font-size: 1.2em;
             text-align: left;
             padding-bottom: 15px;
+            padding-top: 15px;
             margin: auto;
             }
+
+.oferta div {
+    display: block;
+    width: 90%;
+    margin: auto;
+    line-height: 2;
+    font-family: 'font';
+    
+}
 
 .oferta span { text-transform: uppercase;
                 }
@@ -553,6 +593,13 @@ span.copy a { color:#db2c26; }
 /*480 breakpoint*/
 @media only screen and (min-width: 480px) {
     
+    
+    
+    h3 { font-size: 1.7em;
+         padding-top: 170px;
+         padding-left: 1em;
+         padding-right: 1em;}
+    
     .oferta { padding: 20px 50px 20px 50px; }
     
     #pie ul { padding-left: 100px;  }
@@ -590,6 +637,10 @@ span.copy a { color:#db2c26; }
 }
 /*768 breakpoint*/
 @media only screen and (min-width: 768px) {
+    
+    h3 { font-size: 2em;
+         padding-top: 165px;
+         }
     
    .oferta { padding: 20px 190px 20px 190px; }
     
@@ -669,6 +720,10 @@ span.copy a { color:#db2c26; }
     
     li a { min-width: 169px;}
     
+     h3 { padding-left: 3em;
+          padding-right: 3em;
+         }
+    
     .footer-social-links { padding: 0px 0px 15px 0px; }
     
     .footer1 { width: 25%;
@@ -696,8 +751,12 @@ span.copy a { color:#db2c26; }
    #cabecera { width: 1024px;
                margin: auto;} 
     
-    .mkt { width: 1024px;
-           margin: auto;}
+    .mkt, .mktsitiow, .mktonline { width: 1024px;
+                                   margin: auto;}
+    
+    h3 { padding-left: 5em;
+          padding-right: 5em;
+         }
     
     .articulo { width: 1024px;
                 margin: auto;}

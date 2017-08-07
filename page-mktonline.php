@@ -1,12 +1,12 @@
 <?php 
 /*
-Template name: Page SiteWeb
+Template name: Page Mkt-Online
 */
 ?>
-<?php get_template_part( 'header', 'sitiow' ); ?>
+<?php get_template_part( 'header', 'mktonline' ); ?>
 
 		<div id="cuerpo">
-		    <?php include(TEMPLATEPATH.'/mkt-sitiow.php');?>
+		    <?php include(TEMPLATEPATH.'/mkt-mktonline.php');?>
 			
 			<main class="contenido">
 			
@@ -30,7 +30,7 @@ Template name: Page SiteWeb
             <?php get_sidebar(); ?>			
 			</main>
 			<section class="intro">
-			<?php include(TEMPLATEPATH.'/ofertas.php');?>
+			<?php include(TEMPLATEPATH.'/empresa.php');?>
 				
 			</section>		
 			

@@ -28,7 +28,7 @@
 <?php endif; ?>
                <div class="btnempresa">
                    
-                   <a class="btnart artcent" href="#">Leer más</a>
+                   <a class="btnart artcent" href="<?php bloginfo('url') ?>/que-hacemos-por-tu-empresa/">Leer más</a>
                    
                </div>
                 
