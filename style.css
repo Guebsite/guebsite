@@ -354,6 +354,11 @@ input[type=checkbox]:checked ~ #menu{
                         text-decoration: none;
                         background-color: #C97233;}
 
+a.action:hover  { background-color: #DB2C26; }
+a.action:active { background-color: #5e5a58; }
+
+
+
 .btnempresa { width: 100%;
               padding-top: 20px;
               padding-bottom: 10px;}
@@ -769,6 +774,19 @@ span.copy a { color:#db2c26; }
             box-sizing: border-box;}
 
 
+}
+
+/*2000 breakpoint*/
+@media only screen and (min-width: 2000px) {
+    
+    
+     #pie { padding-left: 28%;
+           padding-right: 28%;
+            }
+    
+    
+    
+    
 }
 
 /*
