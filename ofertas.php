@@ -1,5 +1,9 @@
+<div class="list2">
+<h4 class="ofts">Elige la mejor opción para tu Negocio</h4>
+</div>
+
 <section class="ofertas flex">
-				<div class="item">
+            <div class="item">
 					<div class="oferta">
 					    <img src="<?php bloginfo('template_directory') ?>/img/oferta1.png" alt="Oferta">
 					    <div>&#8900; Plantilla Profesional</div>
