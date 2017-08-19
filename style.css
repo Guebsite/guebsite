@@ -311,31 +311,32 @@ input[type=checkbox]:checked ~ #menu{
 		  min-height: 1px;
 		  padding:0px;}
 
-.mkt, .mktsitiow, .mktonline  { width: 100%;
-	                            min-height: 350px;
-	                            background-image: url(img/profesional.jpg);
-                                background-position: center;
-	                            background-color: blue;
-                                padding: 10px 0px 10px 0px;
-                                box-sizing: border-box;
+.mkt, .mktsitiow, .mktonline, mktabout  { width: 100%;
+	                                   min-height: 350px;
+	                                   background-image: url(img/profesional.jpg);
+                                       background-position: center;
+	                                   background-color: blue;
+                                       padding: 10px 0px 10px 0px; 
+                                       box-sizing: border-box;
        }
 
 .mktsitiow { background-image: url(img/sitiow.jpg); }
 .mktonline { background-image: url(img/onlinemkt.jpg); }
+.mktabout { background-image: url(img/mktabout.jpg); }
 
 
-.mkt a, .mktsitiow a, .mktonline a { display: block;
-                                     width: 200px;
-                                     line-height: 2;
-                                     margin: auto;
-                                     font-family: 'font';
-                                     text-align: center;
-                                     font-size: 1.3em;
-                                     color: white;}
+.mkt a, .mktsitiow a, .mktonline a, .mktabout a { display: block;
+                                                  width: 200px;
+                                                  line-height: 2;
+                                                  margin: auto;
+                                                  font-family: 'font';
+                                                  text-align: center;
+                                                  font-size: 1.3em;
+                                                  color: white;}
 
-.mkt a:hover, .mkt a:active, .mktsitiow a:hover, .mktsitiow a:active, .mktonline a:hover, .mktonline a:active  { background-color: rgba(255, 255, 255, 0.2);}
+.mkt a:hover, .mkt a:active, .mktsitiow a:hover, .mktsitiow a:active, .mktonline a:hover, .mktonline a:active, .mktabout a:hover, .mktabout a:active  { background-color: rgba(255, 255, 255, 0.2);}
 
-.mkt span.words, .mktsitiow span.words, .mktonline span.words  { font-weight: bold; }
+.mkt span.words, .mktsitiow span.words, .mktonline span.words, .mktabout span.words  { font-weight: bold; }
 
 .contenido { width: 100%;
 			 min-height: 200px;
@@ -766,8 +767,8 @@ span.copy a { color:#db2c26; }
    #cabecera { width: 1024px;
                margin: auto;} 
     
-    .mkt, .mktsitiow, .mktonline { width: 1024px;
-                                   margin: auto;}
+    .mkt, .mktsitiow, .mktonline, .mktabout { width: 1024px;
+                                              margin: auto;}
     
     h3 { padding-left: 5em;
           padding-right: 5em;
