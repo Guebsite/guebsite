@@ -300,6 +300,8 @@ input[type=checkbox]:checked ~ #menu{
 /*.item { flex: auto; }*/
 
 /*------------------LAYOUT---------------------*/
+#contenedor { width: 100%; }
+
 
 #cabecera { min-height: 1px; }
 
