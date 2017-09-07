@@ -12,6 +12,8 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
   padding:0;
 }
 
+body { overflow-x: hidden; }
+
 fieldset,img, abbr, acronym{
   border:0;
 }
@@ -301,7 +303,6 @@ input[type=checkbox]:checked ~ #menu{
 
 /*------------------LAYOUT---------------------*/
 #contenedor { width: 100%; }
-
 
 #cabecera { min-height: 1px; }
 
