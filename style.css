@@ -770,6 +770,9 @@ span.copy a { color:#db2c26; }
    #cabecera { width: 1024px;
                margin: auto;} 
     
+    #ham { border-top-left-radius: 5px;
+           border-top-right-radius: 5px;}
+    
     .mkt, .mktsitiow, .mktonline, .mktabout { width: 1024px;
                                               margin: auto;}
     
