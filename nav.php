@@ -32,6 +32,6 @@
             </ul>
         </li>
         <li><a href="<?php bloginfo('url') ?>/servicio-global/">Servicio Global</a></li>
-        <li><a href="<?php bloginfo('url') ?>/contacto/">Contacto</a></li>
+        <li><a class="cnt" href="<?php bloginfo('url') ?>/contacto/">Contacto</a></li>
     </ul> 
    </nav> 

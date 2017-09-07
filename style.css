@@ -634,7 +634,7 @@ span.copy a { color:#db2c26; }
     
     .oferta { padding: 20px 120px 20px 120px; }
     
-    #pie { flex-flow: row wrap; }
+    .control { flex-flow: row wrap; }
     
     #pie ul { padding-left: 40px;}
     
@@ -672,7 +672,7 @@ span.copy a { color:#db2c26; }
 /*960 breakpoint*/
 @media only screen and (min-width: 960px) {
     
-    .flex { flex-flow: row;}
+    
     .oferta { padding: 20px 0px 20px 0px; }
     
     .logoweb { display: block;
@@ -736,8 +736,10 @@ span.copy a { color:#db2c26; }
 
 /*1024 breakpoint*/
 @media only screen and (min-width: 1024px) {
+    .flex { flex-flow: row;}
+    li a { min-width: 169.9px;}
     
-    li a { min-width: 169px;}
+    a.cnt { border-top-right-radius: 5px; }
     
      h3 { padding-left: 3em;
           padding-right: 3em;
@@ -771,7 +773,9 @@ span.copy a { color:#db2c26; }
                margin: auto;} 
     
     #ham { border-top-left-radius: 5px;
-           border-top-right-radius: 5px;}
+           border-top-right-radius: 5px;
+           }
+    a.homebtn { border-top-left-radius: 5px;  }
     
     .mkt, .mktsitiow, .mktonline, .mktabout { width: 1024px;
                                               margin: auto;}
@@ -786,9 +790,10 @@ span.copy a { color:#db2c26; }
     .intro { width: 1024px;
                margin: auto;}
     
-    #pie { padding-left: 7%;
-           padding-right: 7%;
-            box-sizing: border-box;}
+    .control { width: 1024px;
+               margin: auto;}
+    
+    #pie { box-sizing: border-box;}
 
 
 }

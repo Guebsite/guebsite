@@ -1,6 +1,8 @@
-<footer id="pie" class="flex">
+<footer id="pie">
       
-			<div class="item footer1">
+			<div class="flex control">
+                
+                <div class="item footer1">
 					<h5>Guebsite</h5>
 					<?php wp_nav_menu(array(
                 
@@ -33,7 +35,7 @@
 				<div class="item footer4">
 					<img src="<?php bloginfo('template_url') ?>/img/Logo_G.png" alt="Guebsite Latinoamérica">
 					
-				</div>
+				</div></div>
      
       </footer>
       <span class="copy">Derechos reservados de concepto y forma de este sitio web. Power by: <a href="http://www.guebsite.com.mx" target="_blank">Guebsite MEXICO</a></span>	
