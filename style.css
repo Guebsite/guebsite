@@ -621,70 +621,6 @@ span.copy a { color:#db2c26; }
 
 /*------------------Formulario de Contacto---------------*/
 
-#wpcf7-f225-p75-o1 { background-color: rgba(219, 44, 38, 0.1);
-                     padding: 12px 0px 0px 0px;
-                     background-image: url(img/sobre.png);
-                     background-repeat: no-repeat;
-                     background-position: 35px 15px;
-                     background-size: 20%;
-                     overflow: hidden;
-                     min-height: 1px;} 
-    
-#wpcf7-f225-p75-o1 > form { padding-left: 300px; }
-
-#wpcf7-f225-p75-o1 > form > p { display: block;
-                                width: 32%;
-                                padding: 0px 5px 0px 0px;
-                                float: left;}
-
-.names, .mails, .phones, .telis { width: 97%;
-                                  padding: 5px 0px 5px 0px;
-                                  margin: 8px 1% 8px 0px;
-                                  }
-.areas { width: 100%;
-         min-height: 100px;
-         max-height: 100px;
-         }
-
-#wpcf7-f225-p75-o1 > form > p:nth-child(5) { width: 33%;
-                                             padding-right: 8px;}
-#wpcf7-f225-p75-o1 > form > p:nth-child(6) { width: 64%;
-                                             padding-right: 9px;}
-
-
-#wpcf7-f225-p75-o1 > form > p:nth-child(7) { width: 33%;}
-
-#wpcf7-f225-p75-o1 > form > p:nth-child(7) > input { width: 99%;
-                                                     height: 100px;                     border:0px;                         
-                                                     border-radius: 5px;
--moz-box-shadow:inset -50px -50px 0px -50px #e67a73;
-	-webkit-box-shadow:inset -50px -50px 0px -50px #e67a73;
-	box-shadow:inset -50px -50px 0px -50px #e67a73;
-	background-color:#e4685d;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	border-radius:3px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:28px;
-	padding:32px 76px;
-	text-decoration:none;
-	text-shadow:0px 0px 1px #b23e35;
-
-}
-
-#wpcf7-f225-p75-o1 > form > p:nth-child(7) > input:hover { background-color:#eb675e; }
-
-#wpcf7-f225-p75-o1 > form > p:nth-child(7) > input:active { position:relative;
-	                                                        top:1px;}
-
-
-
-
-
-
 
 /*tabla contenido*/
 
@@ -819,6 +755,74 @@ table.pasitos { margin-bottom: 25px;
     
     .footer-social-links { padding: 0px 130px 15px 130px; }
     #pie .item { height: 250px; }
+    
+/*------------------Formulario de Contacto---------------*/
+    
+/*#wpcf7-f225-p75-o1 { background-color: rgba(219, 44, 38, 0.1);
+                     padding: 12px 0px 0px 0px;
+                     background-image: url(img/sobre.png);
+                     background-repeat: no-repeat;
+                     background-position: 35px 15px;
+                     background-size: 20%;
+                     overflow: hidden;
+                     min-height: 1px;} 
+    
+#wpcf7-f225-p75-o1 > form { padding-left: 300px; }
+
+#wpcf7-f225-p75-o1 > form > p { display: block;
+                                width: 32%;
+                                padding: 0px 5px 0px 0px;
+                                float: left;}
+
+.names, .mails, .phones, .telis { width: 97%;
+                                  padding: 5px 0px 5px 0px;
+                                  margin: 8px 1% 8px 0px;
+                                  }
+.areas { width: 100%;
+         min-height: 100px;
+         max-height: 100px;
+         }
+
+#wpcf7-f225-p75-o1 > form > p:nth-child(5) { width: 33%;
+                                             padding-right: 8px;}
+#wpcf7-f225-p75-o1 > form > p:nth-child(6) { width: 64%;
+                                             padding-right: 9px;}
+
+
+#wpcf7-f225-p75-o1 > form > p:nth-child(7) { width: 33%;}
+
+#wpcf7-f225-p75-o1 > form > p:nth-child(7) > input { width: 99%;
+                                                     height: 100px;                     border:0px;                         
+                                                     border-radius: 5px;
+-moz-box-shadow:inset -50px -50px 0px -50px #e67a73;
+	-webkit-box-shadow:inset -50px -50px 0px -50px #e67a73;
+	box-shadow:inset -50px -50px 0px -50px #e67a73;
+	background-color:#e4685d;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:28px;
+	padding:32px 76px;
+	text-decoration:none;
+	text-shadow:0px 0px 1px #b23e35;
+
+}
+
+#wpcf7-f225-p75-o1 > form > p:nth-child(7) > input:hover { background-color:#eb675e; }
+
+#wpcf7-f225-p75-o1 > form > p:nth-child(7) > input:active { position:relative;
+	                                                        top:1px;}
+
+*/
+
+
+
+
+
     
     
 }
