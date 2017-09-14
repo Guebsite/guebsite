@@ -621,34 +621,34 @@ span.copy a { color:#db2c26; }
 
 /*------------------Formulario de Contacto---------------*/
 
-#wpcf7-f225-p75-o1 { display: block;
-                    background-color: rgba(219, 44, 38, 0.1);
-                    width: 100%;
-                    background-image: url(img/sobre.png);
-                    background-repeat: no-repeat;
-                    background-position: center 75px;
-                    background-size: 20%;
-                    font-size: 1.3em;
-                    overflow: hidden;
-                    min-height: 1px;}
+.wpcf7 { display: block;
+         background-color: rgba(219, 44, 38, 0.1);
+         width: 100%;
+         background-image: url(img/sobre.png);
+         background-repeat: no-repeat;
+         background-position: center 75px;
+         background-size: 20%;
+         font-size: 1.3em;
+         overflow: hidden;
+         min-height: 1px;}
 
-#wpcf7-f225-p75-o1 > form { display: block;
-                            flex-flow: column;
-                            margin: auto;
-                            box-sizing: border-box;
-                            padding-left: 4px;
-                            width: 95%;}
+.wpcf7 > form { display: block;
+                flex-flow: column;
+                margin: auto;
+                box-sizing: border-box;
+                padding-left: 4px;
+                width: 95%;}
 
 h6 { width: 100%;
      padding-bottom: 80px;}
 
-#wpcf7-f225-p75-o1 > form > p { width: 100%;
-                                padding-bottom: 8px;}
+.wpcf7 > form > p { width: 100%;
+                    padding-bottom: 8px;}
 
-#wpcf7-f225-p75-o1 > form > p > span { width: 100%;
-                                       padding: 0px;}
+.wpcf7 > form > p > span { width: 100%;
+                           padding: 0px;}
 
-#wpcf7-f225-p75-o1 > form > p > input { font-size: 0.7em !important; }
+.wpcf7 > form > p > input { font-size: 0.7em !important; }
 
 
 .names, .correos, .phones, .telis { width: 98%;
@@ -668,20 +668,20 @@ h6 { width: 100%;
          color: #302c29;
          }
 
-#wpcf7-f225-p75-o1 > form > p:nth-child(7) > input { width: 98%;
-                                                     height: 60px;
-                                                    -moz-box-shadow:inset -50px -50px 0px -50px #e67a73;
-	                                                -webkit-box-shadow:inset -50px -50px 0px -50px #e67a73;
-	                                                box-shadow:inset -50px -50px 0px -50px #e67a73;
-	                                                background-color:#e4685d;
-	                                                -moz-border-radius:3px;
-	                                                -webkit-border-radius:3px;
-	                                                border-radius:3px;
-                                                    cursor:pointer;
-	                                                color:#ffffff;
-	                                                font-family:Arial;
-	                                                font-size:25px;
-                                                    text-decoration:none;}
+.wpcf7 > form > p:nth-child(7) > input { width: 98%;
+                                          height: 60px;
+                                         -moz-box-shadow:inset -0px -50px #e67a73;
+	                                     -webkit-box-shadow:i-50px 0px -50px #e67a73;
+	                                     box-shadow:inset -50px-50px #e67a73;
+	                                     background-color:#e4685d;
+	                                     -moz-border-radius:3px;
+	                                     -webkit-border-radius:3px;
+	                                     border-radius:3px;
+                                         cursor:pointer;
+	                                     color:#ffffff;
+	                                     font-family:Arial;
+	                                     font-size:25px;
+                                         text-decoration:none;}
 
 
 
@@ -715,7 +715,7 @@ table.pasitos { margin-bottom: 25px;
     
     /*Formulario de Contacto*/
     
-    #wpcf7-f225-p75-o1 { background-position: center 56px;
+    .wpcf7 { background-position: center 56px;
                     }
     
 }
@@ -750,7 +750,7 @@ table.pasitos { margin-bottom: 25px;
     
        /*Formulario de Contacto*/
     
-    #wpcf7-f225-p75-o1 { background-position: center 50px;
+    .wpcf7 { background-position: center 50px;
                     }
     h6 { padding-bottom: 120px;
          padding-top: 20px;}
@@ -771,7 +771,7 @@ table.pasitos { margin-bottom: 25px;
     
     /*Formulario de Contacto*/
     
-    #wpcf7-f225-p75-o1 { background-position: center 50px;
+    .wpcf7 { background-position: center 50px;
                     }
     h6 { padding-bottom: 140px;
          text-align: center;
@@ -843,35 +843,35 @@ table.pasitos { margin-bottom: 25px;
     
 /*------------------Formulario de Contacto---------------*/
 
-    #wpcf7-f225-p75-o1 { padding-left: 200px;
-                         box-sizing: border-box;
-                         background-size: 15%;
-                         background-position: 30px 55px;}
+    .wpcf7 { padding-left: 200px !important;
+             box-sizing: border-box;
+             background-size: 15%;
+             background-position: 30px 55px;}
     
     h6 { padding-bottom: 20px;
          text-align: left;
          } 
     
-    #wpcf7-f225-p75-o1 > form { width: 98%; }
+    .wpcf7 > form { width: 98%; }
     
-    #wpcf7-f225-p75-o1 > form > p { width: 33.33%;
+    .wpcf7 > form > p { width: 33.33%;
                                     float:left;}
     
-    #wpcf7-f225-p75-o1 > form > p:nth-child(6) { width: 66%; }
+    .wpcf7 > form > p:nth-child(6) { width: 66%; }
     
     .areas { width: 100%;
          min-height: 100px;
          max-height: 100px;
          }
     
-    #wpcf7-f225-p75-o1 > form > p:nth-child(7) { width: 33.33%;
+    .wpcf7 > form > p:nth-child(7) { width: 33.33%;
                                                  padding-left: 2px;
                                                  font-size: 2em;
                                                  height: 115px;
                                                  padding-top: 4px;}
     
-    #wpcf7-f225-p75-o1 > form > p:nth-child(7) > input { width: 100%;
-                                                         height: 100px;}
+    .wpcf7 > form > p:nth-child(7) > input { width: 100%;
+                                             height: 100px;}
     
     .ofertas { margin: auto;
                width: 50%;}
