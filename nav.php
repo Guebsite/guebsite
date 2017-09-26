@@ -27,7 +27,7 @@
         <li>
             <a href="#">+ Servicios &#8595;</a>
             <ul class="hidden">
-                <li><a href="<?php bloginfo('url') ?>/servicios/alojamiento-web/">Aojamiento Web</a></li>
+                <li><a href="<?php bloginfo('url') ?>/servicios/alojamiento-web/">Alojamiento Web</a></li>
                 
             </ul>
         </li>

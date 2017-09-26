@@ -88,7 +88,7 @@ h1 { color: #302c29;
 
 h1 strong {text-transform: uppercase;
            font-weight: bolder;
-           color:#C97233;}
+           color:#DB2C26;}
 
 h2 {  }
 h3 { color: white;
@@ -311,19 +311,19 @@ input[type=checkbox]:checked ~ #menu{
 /*.item { flex: auto; }*/
 
 /*------------------LAYOUT---------------------*/
-#contenedor { width: 100%; }
+#contenedor { width: 100%;}
 
-#cabecera { min-height: 1px; }
+#cabecera { min-height: 1px;}
 
 .logoweb { display: none;}
 
-.tels { display: none;}
+.tels { display: none; }
 
 #cuerpo { width: 100%;
 		  min-height: 1px;
 		  padding:0px;}
 
-.mkt, .mktsitiow, .mktonline, .mktabout  { width: 100%;
+.mkt, .mktsitiow, .mktonline, .mktabout   { width: 100%;
 	                                   min-height: 350px;
 	                                   background-image: url(img/profesional.jpg);
                                        background-position: center;
@@ -368,14 +368,17 @@ input[type=checkbox]:checked ~ #menu{
 .btnart, .btnofer {     box-sizing: border-box;
                         font-family: 'Font';
                         display: block;
-                        width: 70%;
+                        width: 75%;
                         min-height: 1px;
                         text-align: center;
                         border-radius: 5px;
+                        
                         padding:10px;
                         color:white;
                         text-decoration: none;
-                        background-color: #C97233;}
+                        background-color: #DB2C26;}
+
+.btnart:active { background-color: #5e5a58; }
 
 a.action:hover  { background-color: #DB2C26; }
 a.action:active { background-color: #5e5a58; }
@@ -589,7 +592,7 @@ span.copy a { color:#db2c26; }
     top: 0;
     left: 0;
     border: 1px solid #111;
-    background-color: #302c29;
+    background-color: whitesmoke;
     
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -624,7 +627,12 @@ span.copy a { color:#db2c26; }
 
 .tablepqt td { padding: 2px 0px 2px 70px; }
 
-.tablepqt td.cellpad { padding-left: 0px; }
+.tablepqt td.cellpad { padding-left: 0px;
+                       text-align: center;}
+td.cellpad > form { min-height: 1px !important;
+                    display: block;
+                    height: 40px;}
+
 
 .tablepqt td.price { padding-top: 10px;
                      padding-bottom: 10px;
@@ -654,7 +662,7 @@ span.copy a { color:#db2c26; }
 /*------------------Formulario de Contacto---------------*/
 
 .wpcf7 { display: block;
-         background-color: rgba(219, 44, 38, 0.1);
+         background-color: rgba(222, 214, 214, 0.5);
          width: 100%;
          background-image: url(img/sobre.png);
          background-repeat: no-repeat;
@@ -685,7 +693,8 @@ h6 { width: 100%;
 
 .names, .correos, .phones, .telis { width: 98%;
                                   box-sizing: border-box;
-                                  font-size: 0.7em !important;
+                                  font-size: 0.65em !important;
+                                  font-family: font;
                                   color: #302c29;
                                   padding: 10px 0px 10px 10px; }
     
@@ -696,7 +705,8 @@ h6 { width: 100%;
          padding-left: 10px;
          min-height: 150px;
          max-height: 150px;
-         font-size: 0.7em !important;
+         font-family: font;
+         font-size: 0.65em !important;
          color: #302c29;
          }
 
@@ -705,7 +715,7 @@ h6 { width: 100%;
                                          -moz-box-shadow:inset -0px -50px #e67a73;
 	                                     -webkit-box-shadow:i-50px 0px -50px #e67a73;
 	                                     box-shadow:inset -50px-50px #e67a73;
-	                                     background-color:#e4685d;
+	                                     background-color:#DB2C26;
 	                                     -moz-border-radius:3px;
 	                                     -webkit-border-radius:3px;
 	                                     border-radius:3px;
@@ -726,6 +736,11 @@ table.pasitos { margin-bottom: 25px;
                 font-size: 1.5em;
                 }
 
+img.victoria { width: 100%;
+               margin: 0px auto 15px auto;
+               display: block;
+               }
+
 /*.mktabout h3 { color:black !important;}*/
 
 
@@ -742,6 +757,13 @@ table.pasitos { margin-bottom: 25px;
          padding-right: 1em;}
     
     .imgtd { height: 320px;}
+    
+    img.victoria { float: left;
+                   padding-bottom: 20px;
+                   height: auto;
+                   
+               
+               }
     
     .tablepqt td {
     padding: 2px 0px 2px 20%;
@@ -770,6 +792,13 @@ table.pasitos { margin-bottom: 25px;
      .tablepqt td {
     padding-left: 26%;
 }
+   
+   #cuerpo > main > article > p:nth-child(3) {width: 100%;
+                                             float: left;
+                                             clear: both;} 
+    
+    img.victoria {  width: 360px;
+                    padding-bottom: 0px;}
     
     .oferta { padding: 20px 120px 20px 120px; }
     
@@ -887,6 +916,16 @@ table.pasitos { margin-bottom: 25px;
     padding-left: 15%;
 }
     
+    img.victoria {  clear: none;
+                    width: 420px;
+                    float:right;}
+    
+    #cuerpo > main > article > p:nth-child(3) {
+    width: 100%;
+    float:none;
+    clear:none;
+}
+    
     .design { width: 45%;
               margin: auto;}
     
@@ -958,7 +997,7 @@ table.pasitos { margin-bottom: 25px;
     
     .tablepqt td { padding-left: 19%; }
     
-    .footer-social-links { padding: 0px 0px 15px 0px; }
+    .footer-social-links { padding: 0px 20px 15px 20px; }
     
     .footer1 { width: 25%;
                height: 250px;}

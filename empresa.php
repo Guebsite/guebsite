@@ -1,7 +1,7 @@
 
     
           <div class="list">
-				    <h4 class="bloque1">¿Que hacemos por tu empresa ?</h4>
+				    <h4 class="bloque1">¿Qué hacemos por tu empresa ?</h4>
 				    
           </div>  
 <?php query_posts('category_name=empresa') ?>              
@@ -26,11 +26,11 @@
                
 
 <?php endif; ?>
-               <div class="btnempresa">
+              <!-- <div class="btnempresa">
                    
                    <a class="btnart artcent" href="<?php bloginfo('url') ?>/que-hacemos-por-tu-empresa/">Leer más</a>
                    
-               </div>
+               </div> -->
                 
 				
 				
