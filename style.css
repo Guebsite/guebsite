@@ -84,10 +84,12 @@ h1 { color: #302c29;
      text-align: left; 
      padding-bottom: 10px;
      padding-top: 10px;
-     font-family: 'Font';  }
+     font-family: 'Font'; 
+     font-weight: bold;}
 
 h1 strong {text-transform: uppercase;
            font-weight: bolder;
+            font-size: 0.9em;
            color:#DB2C26;}
 
 h2 {  }
@@ -102,11 +104,15 @@ h4 { color: #302c29;
      font-size: 2em;
      text-align: left; 
      padding-bottom: 10px;
+    font-weight: bold;
      font-family: 'Font';}
 
 h4.ofts { width: 100%;
-          text-align: center;
+          display: block;
+          text-align: center !important;
           }
+
+.list2 { width: 100%; }
 
 h5 { font-family: 'Font';
      text-transform: uppercase;
@@ -327,13 +333,16 @@ input[type=checkbox]:checked ~ #menu{
 	                                   min-height: 350px;
 	                                   background-image: url(img/profesional.jpg);
                                        background-position: center;
-	                                   background-color: blue;
+	                                   background-color: #DB2C26;
                                        padding: 10px 0px 10px 0px; 
                                        box-sizing: border-box;
        }
 
-.mktsitiow { background-image: url(img/sitiow.jpg); }
-.mktonline { background-image: url(img/onlinemkt.jpg); }
+.mktsitiow { background-image: url(img/sitiow.jpg);
+            background-position: -120px;}
+
+.mktonline { background-image: url(img/onlinemkt.jpg);
+                background-position: -225px;}
 .mktabout { background-image: url(img/mktabout.jpg); }
 
 
@@ -344,6 +353,7 @@ input[type=checkbox]:checked ~ #menu{
                                                   font-family: 'font';
                                                   text-align: center;
                                                   font-size: 1.3em;
+                                                    text-decoration: none;
                                                   color: white;}
 
 .mkt a:hover, .mkt a:active, .mktsitiow a:hover, .mktsitiow a:active, .mktonline a:hover, .mktonline a:active, .mktabout a:hover, .mktabout a:active  { background-color: rgba(255, 255, 255, 0.2);}
@@ -378,7 +388,7 @@ input[type=checkbox]:checked ~ #menu{
                         text-decoration: none;
                         background-color: #DB2C26;}
 
-.btnart:active { background-color: #5e5a58; }
+.btnart:active, .btnofer:active { background-color: #5e5a58; }
 
 a.action:hover  { background-color: #DB2C26; }
 a.action:active { background-color: #5e5a58; }
@@ -733,7 +743,7 @@ h6 { width: 100%;
 
 table.pasitos { margin-bottom: 25px;
                 font-family: font;
-                font-size: 1.5em;
+                font-size: 1.3em;
                 }
 
 img.victoria { width: 100%;
@@ -836,6 +846,8 @@ img.victoria { width: 100%;
          padding-top: 165px;
          }
     
+    .mktsitiow {background-position: 0px;}
+    .mktonline { background-position: 0px;}
     .imgtd { background-size: 35%;}
     
     .tablepqt td {
@@ -984,13 +996,14 @@ img.victoria { width: 100%;
 /*1024 breakpoint*/
 @media only screen and (min-width: 1024px) {
     .flex { flex-flow: row;}
-    li a { min-width: 169.9px;}
+    li a { min-width: 169.6px;}
     
     a.cnt { border-top-right-radius: 5px; }
     
      h3 { padding-left: 3em;
           padding-right: 3em;
          }
+    h4.ofts { text-align: center;}
     
     .imgtd { background-size: 64%;
              }
