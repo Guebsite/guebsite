@@ -15,7 +15,7 @@
 					</div>				
 				</div>
 				<div class="item">
-					<div class="oferta">
+					<div class="oferta ofimp">
 					    <img src="<?php bloginfo('template_directory') ?>/img/oferta2.png" alt="Oferta">
 					    <div>&#8900; Diseño Personalizado</div>
 					    <div>&#8900; Optimizada en Buscadores</div>

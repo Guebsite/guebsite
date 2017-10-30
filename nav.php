@@ -1,4 +1,5 @@
 <nav id="ham">
+    <div id="control">
 		<div class="logocel">
 				<img src="<?php bloginfo('template_url') ?>/img/logocel.png" alt="Logo Guebsite">
         </div>
@@ -32,6 +33,7 @@
             </ul>
         </li>
         <li><a href="<?php bloginfo('url') ?>/servicio-global/">Servicio Global</a></li>
-        <li><a class="cnt" href="<?php bloginfo('url') ?>/contacto/">Contacto</a></li>
+        <li class="borl"><a class="cnt" href="<?php bloginfo('url') ?>/contacto/">Contacto</a></li>
     </ul> 
+    </div>
    </nav> 

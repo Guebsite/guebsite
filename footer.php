@@ -30,15 +30,17 @@
   <a href="#" title="Google+" target="_blank"><i class="fa fa-google-plus"></i></a>
   <a href="#" title="Youtube" target="_blank"><i class="fa fa-youtube"></i></a>
                 </div>
+                <div class="logowhite">
+                    
+                </div>
 
 				</div>
-				<div class="item footer4">
-					<img src="<?php bloginfo('template_url') ?>/img/Logo_G.png" alt="Guebsite Latinoamérica">
-					
-				</div></div>
+				
+				
+				</div>
      
       </footer>
-      <span class="copy">Derechos reservados de concepto y forma de este sitio web. Power by: <a href="http://www.guebsite.com.mx" target="_blank">Guebsite Latinoamérica</a></span>	
+      <span class="copy">Derechos reservados de concepto y forma de este sitio web. Power by: <a href="https://www.guebsite.com" target="_blank">Guebsite Latinoamérica</a></span>	
 	</div>
 	<?php wp_footer(); ?>
 </body>

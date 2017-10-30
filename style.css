@@ -56,7 +56,7 @@ input,select,textarea{
   .alignleft {float:left;}
   img.alignleft, img [align="left"] { float:left; margin:2px 10px 5px 0px;}
   .alignright { float:right;}
-  img.alignright, img [align="right"] { float:right; margin:2px 0px 5px 10px;}
+  img.alignright, img [align="right"] { float:right; margin:2px 0px 20px 10px;}
   .clear { clear:both;}
   hr.clear { clear:both; visibility:hidden; margin:0px; padding:0px; height:0px;}
   article.content p { margin-bottom:12px; }
@@ -87,30 +87,45 @@ h1 { color: #302c29;
      font-family: 'Font'; 
      font-weight: bold;}
 
-h1 strong {text-transform: uppercase;
+h1 strong {text-shadow: 3px 3px 3px #302c29;
            font-weight: bolder;
-            font-size: 0.9em;
-           color:#DB2C26;}
+            font-size: 1.5em;
+           /*color:#DB2C26;*/}
+
+h1 span { text-align: center;
+          display: block;}
+
+
 
 h2 {  }
 h3 { color: white;
-     font-size: 1.5em;
+     font-size: 1.6em;
      text-align: center;
      font-family: 'Font';
-     padding-top: 180px;
+     padding-top: 240px;
      padding-bottom: 15px;}
 
 h4 { color: #302c29;
      font-size: 2em;
      text-align: left; 
-     padding-bottom: 10px;
-    font-weight: bold;
+     padding-bottom: 15px;
+    padding-top: 5px;
+     font-weight: bold;
      font-family: 'Font';}
+
+h4 span { color: white;
+          display: block;
+          text-align: right;
+          font-size: 1.2em;
+          text-shadow: 3px 3px 3px #000000;}
 
 h4.ofts { width: 100%;
           display: block;
-          text-align: center !important;
-          }
+          text-align: center !important;}
+
+i.signos { font-family: arial !important;
+       font-style: normal !important;
+       }
 
 .list2 { width: 100%; }
 
@@ -120,11 +135,12 @@ h5 { font-family: 'Font';
      padding: 10px 0px 10px 1em;
      text-decoration: underline;
      }
-h6 { display: block;
+
+/*h6 { display: block;
      width: 100%;
      font-family: font;
      font-size: 1.2em;
-     padding: 10px 0px;}
+     padding: 10px 0px;}*/
 
 /*-------------------Flex----------------------*/
 .flex { display: flex; 
@@ -176,7 +192,7 @@ input[type=checkbox]:checked + label.show-menu > span.menu-btn:after{
 /*Strip the ul of padding and list styling*/
 ul {
     list-style-type:none;
-    margin:0;
+    margin:auto;
     padding:0;
     position: absolute;
 }
@@ -258,7 +274,10 @@ input[type=checkbox]{
 input[type=checkbox]:checked ~ #menu{
     display: block;
 }
-/*Responsive Styles*/
+
+#menu { margin: auto !important;
+        }
+/*Responsive Styles menu*/
 @media screen and (max-width : 850px){
     
     .homebtn { background-color: transparent;}
@@ -329,21 +348,25 @@ input[type=checkbox]:checked ~ #menu{
 		  min-height: 1px;
 		  padding:0px;}
 
-.mkt, .mktsitiow, .mktonline, .mktabout   { width: 100%;
-	                                   min-height: 350px;
-	                                   background-image: url(img/profesional.jpg);
-                                       background-position: center;
-	                                   background-color: #DB2C26;
-                                       padding: 10px 0px 10px 0px; 
-                                       box-sizing: border-box;
+.mkt, .mktsitiow, .mktonline, .mktabout, .mktcontact    { width: 100%;
+	                                                       min-height: 500px;
+	                                                       background-image:     url(img/profesional500.jpg);
+                                                           background-position: center;
+	                                                       background-color: #DB2C26;
+                                                           padding: 10px 0px 10px 0px; 
+                                                           box-sizing: border-box;
        }
 
-.mktsitiow { background-image: url(img/sitiow.jpg);
-            background-position: -120px;}
+.mktsitiow { background-image: url(img/teclado500.jpg);
+            /*background-position: -120px;*/}
 
-.mktonline { background-image: url(img/onlinemkt.jpg);
-                background-position: -225px;}
-.mktabout { background-image: url(img/mktabout.jpg); }
+.mktonline { background-image: url(img/mkt500.jpg);
+                /*background-position: -225px;*/}
+
+.mktcontact { background-image: url(img/cont500.jpg);
+                /*background-position: -225px;*/}
+
+.mktabout { background-image: url(img/grupo500.jpg); }
 
 
 .mkt a, .mktsitiow a, .mktonline a, .mktabout a { display: block;
@@ -354,9 +377,10 @@ input[type=checkbox]:checked ~ #menu{
                                                   text-align: center;
                                                   font-size: 1.3em;
                                                     text-decoration: none;
+                                                  background-color: rgba(255, 255, 255, 0.2);
                                                   color: white;}
 
-.mkt a:hover, .mkt a:active, .mktsitiow a:hover, .mktsitiow a:active, .mktonline a:hover, .mktonline a:active, .mktabout a:hover, .mktabout a:active  { background-color: rgba(255, 255, 255, 0.2);}
+.mkt a:hover, .mkt a:active, .mktsitiow a:hover, .mktsitiow a:active, .mktonline a:hover, .mktonline a:active, .mktabout a:hover, .mktabout a:active  { background-color: rgba(94, 90, 88, 0.44);}
 
 .mkt span.words, .mktsitiow span.words, .mktonline span.words, .mktabout span.words  { font-weight: bold; }
 
@@ -379,6 +403,7 @@ input[type=checkbox]:checked ~ #menu{
                         font-family: 'Font';
                         display: block;
                         width: 75%;
+                        margin: auto;
                         min-height: 1px;
                         text-align: center;
                         border-radius: 5px;
@@ -387,6 +412,15 @@ input[type=checkbox]:checked ~ #menu{
                         color:white;
                         text-decoration: none;
                         background-color: #DB2C26;}
+
+.btnm { border-radius: 0px;
+        width: 246px;
+        background-color: #b1b1b1;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px #302c29;
+        box-shadow: 4px 4px 4px #302c29;}
+
+.btnm:active { background-color: rgba(48, 44, 41, 0.38); }
 
 .btnart:active, .btnofer:active { background-color: #5e5a58; }
 
@@ -404,8 +438,13 @@ a.action:active { background-color: #5e5a58; }
         }
 .oferta { width: 100%;
           min-height: 1px;
-          padding: 10px;
+          padding: 20px 10px 10px 10px;
           box-sizing: border-box; }
+
+.ofimp { 
+         padding-top: 10px !important;
+         background-color: rgba(177, 177, 177, 0.5);
+         }
 
 .oferta img { display: block;
               width: 90%;
@@ -451,8 +490,8 @@ a.action:active { background-color: #5e5a58; }
 
 .intro    { width: 100%;
 		   min-height: 1px;
-           border-top: 20px #db2c26 solid;
-           padding: 15px 10px 15px 10px;
+           /*border-top: 20px #db2c26 solid;*/
+           padding: 15px 0px 15px 0px;
            box-sizing: border-box;           
 	      	   }
 .bloque1d, .numerados, .bloque2p { width: 100%;
@@ -469,14 +508,24 @@ a.action:active { background-color: #5e5a58; }
                color: #302c29;
                font-family: 'font'}
 
-.list { border-bottom: 1px solid rgba(48, 44, 41, 0.35);
-        padding-bottom: 10px;}
+.list { /*border-bottom: 1px solid rgba(48, 44, 41, 0.35);*/
+        padding: 10px 0px;
+        background-color: #DB2C26;}
 
 .design  { width: 100%;
-         min-height: 1px;
-         padding: 15px 10px 15px 10px;
-         border-bottom: 1px solid rgba(48, 44, 41, 0.35);
-         box-sizing: border-box;}
+            display: flex;
+            flex-flow: column;
+            min-height: 1px;
+            padding: 15px 10px 15px 10px;
+            /*border-bottom: 1px solid rgba(48, 44, 41, 0.35);*/
+            box-sizing: border-box;}
+
+.designitems { width: 100%;
+               height: auto;
+               padding: 20px 0px;}
+
+.designitems img { display: block;
+                   margin: auto;}
 
 img.post { display: block;
            width: 250px;
@@ -509,14 +558,15 @@ h4.symbold { display: block;
 		     }
 
 
-.footer1, .footer2, .footer3, .footer4 { color: white;
-                                         padding: 0px 0px 15px 0px;
-                                         box-sizing: border-box;}
+.footer1, .footer2, .footer3 { color: white;
+                               width: 100%;
+                               padding: 0px 0px 15px 0px;
+                               box-sizing: border-box;}
 
-.footer4 img { display: block;
+/*.footer4 img { display: block;
                margin: auto;
                padding-left: 1em;
-               width: 150px;}
+               width: 150px;}*/
 
 #pie ul { display: block;
           width: 100%;
@@ -570,11 +620,11 @@ span.copy a { color:#db2c26; }
   margin-top: 15px;
 }
 .footer-social-links a{
-    width: 37px;
-    height: 37px;
+    width: 50px;
+    height: 50px;
     line-height: 25px !important;
     position: relative;
-    margin: 0 6px;
+    margin: 0 2px;
     font-size: 1.8em;
     text-align: center;
     display: inline-block;
@@ -590,7 +640,7 @@ span.copy a { color:#db2c26; }
 .footer-social-links a i,
 .footer-social-links a span{
     position: relative;
-    top: 8px;
+    top: 14.5px;
     left: 1px; 
 }
 .footer-social-links a:before{
@@ -601,12 +651,13 @@ span.copy a { color:#db2c26; }
     position: absolute;
     top: 0;
     left: 0;
-    border: 1px solid #111;
+    
+    
     background-color: whitesmoke;
     
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
     
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -671,7 +722,136 @@ td.cellpad > form { min-height: 1px !important;
 
 /*------------------Formulario de Contacto---------------*/
 
-.wpcf7 { display: block;
+.pruebacont { width: 100%;
+              min-height: 1px;
+              box-sizing: border-box;}
+
+.pruebacont p, .pruebacont span, .pruebacont input { display: block;
+                                                     width: 100%;
+                                                     padding: 0px;
+                                                     min-height: 1px;}
+
+div.wpcf7 {
+   border: 0px solid #d1c6c6;
+   background: #eae5e5;
+   background: -webkit-gradient(linear, left top, left bottom, from(#efebeb), to(#eae5e5));
+   background: -webkit-linear-gradient(top, #efebeb, #eae5e5);
+   background: -moz-linear-gradient(top, #efebeb, #eae5e5);
+   background: -ms-linear-gradient(top, #efebeb, #eae5e5);
+   background: -o-linear-gradient(top, #efebeb, #eae5e5);
+   background-image: -ms-linear-gradient(top, #efebeb 0%, #eae5e5 100%);
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   -webkit-box-shadow: rgba(000,000,000,0.9) 0 0px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
+   -moz-box-shadow: rgba(000,000,000,0.9) 0 0px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
+   box-shadow: rgba(000,000,000,0.9) 0 0px 2px, inset rgba(255,255,255,0.4) 0 0px 0;
+   
+    font-family: font;
+   text-decoration: none;
+   vertical-align: middle;
+   min-width:300px;
+   padding:5px !important;
+   box-sizing: border-box;
+   width:100%;
+   }
+
+
+div.pruebacont input, div.mensajecontact textarea { border: 1px solid #c9b6b5;
+                 background: #fafafa;
+                 -webkit-border-radius: 0px;
+                 -moz-border-radius: 0px;
+                 border-radius: 0px;
+                 color: #5e5a58;
+                 -webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0,                     rgba(000,000,000,0.7) 0 0px 0px;
+                 -moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0,                     rgba(000,000,000,0.7) 0 0px 0px;
+                 box-shadow: rgba(255,255,255,0.4) 0 1px 0,                     rgba(000,000,000,0.7) 0 0px 0px;
+                 padding:12px 10px;
+                 margin: 8px 0px;
+                 box-sizing: border-box;
+                 font-family: font;
+                 font-size: 0.9em !important;
+                 width:100%;}
+
+div.mensajecontact textarea { margin: 0px;
+                              max-width: 100%;
+                              min-width: 100%;}
+
+
+h6 {
+   text-shadow: #dbd7d2 0 1px 0;
+   font-size:1.4em;
+    color: #DB2C26;
+   margin: 0 0 10px 0;
+   font-weight:bold;
+   text-align:center;
+   padding: 9px 0px 8px 0px;
+    }
+
+
+
+input.wpcf7-submit {
+   border: 1px solid #d92525;
+   background: #dd3a35;
+   background: -webkit-gradient(linear, left top, left bottom, from(#db2c26), to(#dd3a35));
+   background: -webkit-linear-gradient(top, #db2c26, #dd3a35);
+   background: -moz-linear-gradient(top, #db2c26, #dd3a35);
+   background: -ms-linear-gradient(top, #db2c26, #dd3a35);
+   background: -o-linear-gradient(top, #db2c26, #dd3a35);
+   background-image: -ms-linear-gradient(top, #db2c26 0%, #dd3a35 100%);
+   -webkit-border-radius: 0px;
+   -moz-border-radius: 0px;
+   border-radius: 0px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+   text-shadow: #858a80 0 1px 0;
+   color: #ffffff;
+   font-family: font;
+   padding: 8.5px 48px;
+   font-size: 1.2em;
+   text-decoration: none;
+   vertical-align: middle;
+    display: block;
+    margin: 12px auto 0px auto;
+    width: 284px;
+      }
+
+input.wpcf7-submit:active, input.wpcf7-submit:hover {
+   text-shadow: #858a80 0 1px 0;
+   border: 1px solid #575956;
+   background: #db2c26;
+   background: -webkit-gradient(linear, left top, left bottom, from(#dd3a35), to(#db2c26));
+   background: -webkit-linear-gradient(top, #dd3a35, #db2c26);
+   background: -moz-linear-gradient(top, #dd3a35, #db2c26);
+   background: -ms-linear-gradient(top, #dd3a35, #db2c26);
+   background: -o-linear-gradient(top, #dd3a35, #db2c26);
+   background-image: -ms-linear-gradient(top, #dd3a35 0%, #db2c26 100%);
+   color: #fff;
+   }
+
+div.wpcf7 span { font-size: 0.87em; }
+
+#wpcf7-f225-p75-o1 > form > p { padding-bottom: 0px; }
+
+#controlf > div.mensajecontact > p { padding-bottom: 0px;}
+    
+#wpcf7-f225-p75-o1 > form > p > span { min-height: 1px;
+                                           display: block;}
+
+#wpcf7-f225-p66-o1 > form > p { padding-bottom: 0px;
+                                height: 60px !important;}
+
+div.wpcf7-validation-errors {
+    border: 2px solid #DB2C26 !important;
+}
+
+div.wpcf7-response-output {
+    margin: 1em 0.5em 1em;
+    padding: 0.2em 1em ;
+}
+
+/*.wpcf7 { display: block;
          background-color: rgba(222, 214, 214, 0.5);
          width: 100%;
          background-image: url(img/sobre.png);
@@ -733,7 +913,7 @@ h6 { width: 100%;
 	                                     color:#ffffff;
 	                                     font-family:Arial;
 	                                     font-size:25px;
-                                         text-decoration:none;}
+                                         text-decoration:none;}*/
 
 
 
@@ -741,15 +921,50 @@ h6 { width: 100%;
 
 /*tabla contenido*/
 
-table.pasitos { margin-bottom: 25px;
+/*table.pasitos { margin-bottom: 25px;
                 font-family: font;
                 font-size: 1.3em;
-                }
+                }*/
 
-img.victoria { width: 100%;
+/*-----Pasos para alcanzar Metas-----*/
+
+.metas { display: flex;
+        flex-flow: column;
+         width: 100%;
+         margin: 0px auto 20px auto;}
+
+.metasitem { width: 100%;
+             height: auto;
+             padding: 0px 0px 20px 0px;}
+
+.metasitem img { display: block;
+                 margin: auto;}
+
+/*.pasitos1 { width: 100%;
+            display: flex;
+            flex-flow: column;
+            margin: 0px auto 20px auto;
+            min-height: 1px;}
+
+.pasitositems { width: 100%;
+                height: auto;
+                padding: 0px 0px 20px 0px;}
+
+.pasitositems img { display: block;
+                    margin: auto;}*/
+
+.logowhite { width: 200px;
+             height: 60px;
+             margin: 20px auto 15px auto;
+             background-repeat: no-repeat;
+             background-image: url(img/guebsite-white.png);}
+
+
+
+/*img.victoria { width: 100%;
                margin: 0px auto 15px auto;
                display: block;
-               }
+               }*/
 
 /*.mktabout h3 { color:black !important;}*/
 
@@ -762,18 +977,33 @@ img.victoria { width: 100%;
     
     
     h3 { font-size: 1.7em;
-         padding-top: 170px;
-         padding-left: 1em;
-         padding-right: 1em;}
+         padding-top: 270px;
+         padding-left: 1.5em;
+         padding-right: 1.5em;}
+    
+    h4 { display:block;
+        float: right;
+        width: 350px;
+        font-size: 2em;
+        padding-right: 10px;}
+    
+    h4.ofts {  box-sizing: border-box;}
+    
+    .list { overflow: hidden; }
+    
+    h4 span { width: 330px;
+              float: right;}
     
     .imgtd { height: 320px;}
     
-    img.victoria { float: left;
+    input.wpcf7-submit { width: 60%; }
+    
+    /*img.victoria { float: left;
                    padding-bottom: 20px;
                    height: auto;
                    
                
-               }
+               }*/
     
     .tablepqt td {
     padding: 2px 0px 2px 20%;
@@ -781,17 +1011,22 @@ img.victoria { width: 100%;
     
     .oferta { padding: 20px 50px 20px 50px; }
     
+    .ofertas { width: 100%; }
+    
     #pie ul { padding-left: 100px;  }
     
     /*Formulario de Contacto*/
     
-    .wpcf7 { background-position: center 56px;
-                    }
+    /*.wpcf7 { background-position: center 56px;
+                    }*/
     
 }
 
 /*600 breakpoint*/
 @media only screen and (min-width: 600px) {
+    
+     h3 { padding-left: 1.2em;
+          padding-right: 1.2em;}
     
     h4.symbold { font-size: 2.3em;}
     
@@ -807,8 +1042,15 @@ img.victoria { width: 100%;
                                              float: left;
                                              clear: both;} 
     
-    img.victoria {  width: 360px;
-                    padding-bottom: 0px;}
+    .mkt { background-image: url(img/profesional1024.jpg);
+                                }
+    .mktsitiow { background-image: url(img/teclado1024.jpg);
+            }
+    .mktonline { background-image: url(img/mkt1024.jpg);
+                }
+    .mktcontact { background-image: url(img/cont1024.jpg);
+                }
+    .mktabout { background-image: url(img/grupo1024.jpg); }
     
     .oferta { padding: 20px 120px 20px 120px; }
     
@@ -816,43 +1058,55 @@ img.victoria { width: 100%;
     
     #pie ul { padding-left: 40px;}
     
+    input.wpcf7-submit { width: 280px; }
+    
     .footer-social-links a {
-    width: 60px;
-    height: 60px;
-    line-height: 45px !important;
-   }
+                            width: 60px;
+                            height: 60px;
+                            margin: 0 4.8px;
+                            line-height: 45px !important; }
     
    .footer-social-links { padding: 0px 40px 15px 40px; }
     
+    .footer-social-links a i, .footer-social-links a span {
+    
+    top: 10px;}
+    
+    .logowhite { margin-top: 10px; }
+    
     .footer1 { width: 50%;} 
     .footer2 { width: 50%;}  
-    .footer3 { width: 50%;} 
-    .footer4 { width: 50%;
-               padding-top: 20px;} 
+    .footer3 { width: 100%;} 
+    
     span.copy  { width: 100%; }
     
        /*Formulario de Contacto*/
     
-    .wpcf7 { background-position: center 50px;
-                    }
-    h6 { padding-bottom: 120px;
-         padding-top: 20px;}
+   /* .wpcf7 { background-position: center 50px;}*/
+                    
+   /* h6 { padding-bottom: 120px;
+         padding-top: 20px;}*/
     
 }
 /*768 breakpoint*/
 @media only screen and (min-width: 768px) {
     
-    h3 { font-size: 2em;
-         padding-top: 165px;
-         }
+    h3 { font-size: 2em; }
     
     .mktsitiow {background-position: 0px;}
     .mktonline { background-position: 0px;}
     .imgtd { background-size: 35%;}
     
-    .tablepqt td {
-    padding-left: 33%;
-}
+.metas { flex-flow: row wrap; }
+
+.metasitem { width: 33.33% !important;
+             box-sizing: border-box;
+             }
+    
+    
+
+    .design { flex-flow: row wrap;}
+    .designitems { width: 50%; }
     
    .oferta { padding: 20px 190px 20px 190px; }
     
@@ -862,17 +1116,48 @@ img.victoria { width: 100%;
     
     /*Formulario de Contacto*/
     
-    .wpcf7 { background-position: center 50px;
-                    }
-    h6 { padding-bottom: 140px;
+    .pruebacont {
+    width: 49%;
+    float: left; 
+}
+    div.mensajecontact {
+    width: 50%;
+    float: right;
+}
+    
+    div.mensajecontact textarea { max-height: 150px;
+                                    min-height: 150px;
+                                    margin-top: 8px;}
+    
+    div.wpcf7 {
+    overflow: hidden;   
+}
+
+    input.wpcf7-submit { margin-top: 10px;
+                      }
+    #controlf { width: 100%;
+                min-height: 1px;
+                overflow: hidden;}
+    
+    
+    /*.wpcf7 { background-position: center 50px;
+                    }*/
+    /*h6 { padding-bottom: 140px;
          text-align: center;
-         }  
+         }  */
     
 }
 
 /*960 breakpoint*/
 @media only screen and (min-width: 960px) {
     
+    h3 { display: block;
+         width: 650px;
+         margin: auto;
+         padding-top: 270px;}
+    
+    #control { width: 960px;
+               margin: auto;}
     
     .oferta { padding: 20px 0px 20px 0px; }
     
@@ -912,8 +1197,11 @@ img.victoria { width: 100%;
              flex-flow: row wrap;
              justify-content: space-between;}
     
-    .list { width: 100%;
-            }
+    .metas { width: 700px; }
+   
+    
+    .list { width: 100%;}
+    
     h4.bloque1 { text-align: center; }
     
     .tablepqt { width: 33%;
@@ -928,9 +1216,9 @@ img.victoria { width: 100%;
     padding-left: 15%;
 }
     
-    img.victoria {  clear: none;
+    /*img.victoria {  clear: none;
                     width: 420px;
-                    float:right;}
+                    float:right;}*/
     
     #cuerpo > main > article > p:nth-child(3) {
     width: 100%;
@@ -938,7 +1226,7 @@ img.victoria { width: 100%;
     clear:none;
 }
     
-    .design { width: 45%;
+    .design { width: 700px;
               margin: auto;}
     
     h4.symbolcima { width: 50%;
@@ -951,12 +1239,26 @@ img.victoria { width: 100%;
     
    
     
-    .footer-social-links { padding: 0px 130px 15px 130px; }
+    .footer-social-links { padding: 0px 60px 15px 60px; }
     #pie .item { height: 250px; }
     
+    #pie { min-height: 280px; }
+    
 /*------------------Formulario de Contacto---------------*/
+    
+    .pruebacont {
+    width: 35%;
+    float: left; 
+}
+    div.mensajecontact {
+    width: 64.2%;
+    float: right;
+}
+    
+    
 
-    .wpcf7 { padding-left: 200px !important;
+
+   /* .wpcf7 { padding-left: 200px !important;
              box-sizing: border-box;
              background-size: 15%;
              background-position: 30px 55px;}
@@ -984,10 +1286,23 @@ img.victoria { width: 100%;
                                                  padding-top: 4px;}
     
     .wpcf7 > form > p:nth-child(7) > input { width: 100%;
-                                             height: 100px;}
+                                             height: 100px;}*/
     
     .ofertas { margin: auto;
                width: 50%;}
+    
+    .footer1, .footer2, .footer3  { width: 33.33%;
+                                   height: 250px;}
+    
+    .footer-social-links { padding-bottom: 0px; }
+    
+    
+    .footer-social-links a {
+    width: 55px;
+    height: 55px;
+    line-height: 35px !important;
+    margin-bottom: 10px;
+}
 
     
 
@@ -998,33 +1313,58 @@ img.victoria { width: 100%;
     .flex { flex-flow: row;}
     li a { min-width: 169.6px;}
     
-    a.cnt { border-top-right-radius: 5px; }
+    #control {
+    width: 1024px;
+    margin: auto;
+}
+    
+    .borl { border-right: 0px; }
+    
+    .mkt { background-image: url(img/profesional1420.jpg);
+                                background-position: top;}
+    
+    .mktsitiow { background-image: url(img/teclado1420.jpg);
+            background-size: 100%;}
+    
+    .mktonline { background-image: url(img/mkt1420.jpg);
+                background-position: top;
+                }
+    .mktcontact { background-image: url(img/cont1420.jpg);
+                }
+    
+    .mktabout { background-image: url(img/grupo1420.jpg); }
     
      h3 { padding-left: 3em;
           padding-right: 3em;
          }
     h4.ofts { text-align: center;}
     
-    .imgtd { background-size: 64%;
-             }
+    .imgtd { background-size: 64%;}
     
     .tablepqt td { padding-left: 19%; }
     
-    .footer-social-links { padding: 0px 20px 15px 20px; }
     
-    .footer1 { width: 25%;
-               height: 250px;}
     
-    .footer2 { width: 25%;
-                height: 250px;}
+    .footer-social-links { padding: 10px 20px 20px 20px;}
     
-    .footer3 { width: 25%;
-                height: 250px;} 
+    .control { width: 950px;
+               margin: auto;}
     
-    .footer4 { width: 25%;
+    /*.footer4 { width: 25%;
                padding-top: 30px;
-                height: 250px;}
-    .ofertas {width: 100%;}
+                height: 250px;}*/
+.ofertas {width: 100%;}
+    
+    .oferta { padding-top: 70px;}
+    
+    .ofimp {
+    border: 1px solid rgba(48, 44, 41, 0.31);
+    padding-top: 10px !important;
+    background-color: transparent;
+}
+    
+    .design { width: 100%;}
+     .designitems { width: 25%;}
     
     
     
@@ -1033,17 +1373,34 @@ img.victoria { width: 100%;
 /*1280 breakpoint*/
 @media only screen and (min-width: 1280px) {
     
+    h4.span { font-size: 1.5em; }
     
-   #cabecera { width: 1024px;
-               margin: auto;} 
+    h4.bloque1 { width: 500px; }
     
-    #ham { border-top-left-radius: 5px;
+    h6 {
+   
+   font-size:1.7em;
+   padding: 14px 0px 8px 0px;
+    }
+    
+    div.mensajecontact textarea {
+    max-height: 162px;
+    min-height: 162px;
+    
+}
+    
+    #controlf { font-size: 1.2em; }
+    
+   /*#cabecera { width: 1024px;
+               margin: auto;}*/ 
+    
+    /*#ham { border-top-left-radius: 5px;
            border-top-right-radius: 5px;
-           }
+           }*/
     a.homebtn { border-top-left-radius: 5px;  }
     
-    .mkt, .mktsitiow, .mktonline, .mktabout { width: 1024px;
-                                              margin: auto;}
+   /* .mkt, .mktsitiow, .mktonline, .mktabout { width: 1024px;
+                                              margin: auto;}*/
     
     h3 { padding-left: 5em;
           padding-right: 5em;
@@ -1052,20 +1409,57 @@ img.victoria { width: 100%;
     .articulo { width: 1024px;
                 margin: auto;}
     
-    .intro { width: 1024px;
+    .intro { margin: 0px; }
+    
+    .ofertas { width: 1024px;
+                margin: auto;}
+    
+    .list { width: 100%; }
+    
+    .design { width: 1024px;
+              margin: auto;}
+    
+    .control { width: 940px;
                margin: auto;}
     
-    .control { width: 1024px;
-               margin: auto;}
     
     #pie { box-sizing: border-box;}
 
 
 }
+/*1421 breakpoint*/
+@media only screen and (min-width: 1421px) {
+
+.mkt {
+    background-image: url(img/profesional3000.jpg);
+    background-position: top;
+    background-size: 100%;
+}
+    
+.mktsitiow { background-image: url(img/teclado3000.jpg);
+            background-position: top;
+            background-size: 100%;}
+    
+.mktsitiow { background-image: url(img/mkt3000.jpg);
+            background-position: top;
+            background-size: 100%;}
+    
+.mktcontact { background-image: url(img/cont3000.jpg);
+            background-position: top;
+            background-size: 100%;}
+
+.mktabout { background-image: url(img/grupo3000.jpg);
+            background-position: center center;
+            background-size: 100%; }
+
+    
+}
 
 /*2000 breakpoint*/
 @media only screen and (min-width: 2000px) {
     
+    .mkt { background-image: url(img/profesional3000.jpg);
+                                background-position: top;}
     
      #pie { padding-left: 28%;
            padding-right: 28%;
