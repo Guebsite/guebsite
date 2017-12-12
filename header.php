@@ -17,7 +17,7 @@
 		<header id="cabecera">
 			<div class="branding">
 			    <div class="logoweb">
-				    <a href="<?php bloginfo('url') ?>"><img src="<?php bloginfo('template_url') ?>/img/guebsite-logo2.jpg"     alt="Guebsite Latinoamérica" title="<?php bloginfo('description') ?>"></a>
+				    <a href="<?php bloginfo('url') ?>"><img src="<?php bloginfo('template_url') ?>/img/websitelogodesk.svg"     alt="Guebsite Latinoamérica" title="<?php bloginfo('description') ?>"></a>
 			    </div>
 			    <div class="tels">
 			    <span class="now">Llámanos ahora:</span><a class="tel1" href="tel:+526441170372">+52 (644) 117 0372</a><a class="tel2" href="tel:+526441164048">+52 (644) 116-4048</a>			    
