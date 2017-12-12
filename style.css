@@ -278,7 +278,7 @@ input[type=checkbox]:checked ~ #menu{
 #menu { margin: auto !important;
         }
 /*Responsive Styles menu*/
-@media screen and (max-width : 850px){
+@media screen and (max-width : 960px){
     
     .homebtn { background-color: transparent;}
     
@@ -496,7 +496,7 @@ a.action:active { background-color: #5e5a58; }
             display: flex;
             flex-flow: column;
             min-height: 1px;
-            padding: 45px 10px 15px 10px;
+            padding: 40px 10px 15px 10px;
             /*border-bottom: 1px solid rgba(48, 44, 41, 0.35);*/
             box-sizing: border-box;}
 
@@ -662,8 +662,10 @@ span.copy a { color:#db2c26; }
 
 .tablepqt td { padding: 2px 0px 2px 70px; }
 
-.tablepqt td.cellpad { padding-left: 0px;
-                       text-align: center;}
+.tablepqt td.cellpad { padding-right: 22%;
+                       text-align: center;
+                       }
+
 td.cellpad > form { min-height: 1px !important;
                     display: block;
                     height: 40px;}
@@ -989,13 +991,19 @@ table.pasitos { margin-bottom: 25px;
     
     h4.symbold { font-size: 2.3em;}
     
-    .btnart { width: 260px; }
+    .btnart { width: 260px;
+              clear: both;}
     
     .imgtd { background-size: 48%;}
     
      .tablepqt td {
     padding-left: 26%;
 }
+    
+    .tablepqt td.cellpad { padding-left: 0px;
+                           text-align: center;
+                           padding-right: 5%;
+                       }
    
    #cuerpo > main > article > p:nth-child(3) {width: 100%;
                                              float: left;
@@ -1052,6 +1060,10 @@ table.pasitos { margin-bottom: 25px;
     .mktsitiow {background-position: 0px;}
     .mktonline { background-position: 0px;}
     .imgtd { background-size: 35%;}
+    
+.tablepqt td {
+    padding-left: 36%;
+}
     
 .metas { flex-flow: row wrap; }
 
@@ -1165,7 +1177,7 @@ table.pasitos { margin-bottom: 25px;
     
     
     .tablepqt td {
-    padding-left: 15%;
+    padding-left: 20%;
 }
     
 
@@ -1242,11 +1254,12 @@ table.pasitos { margin-bottom: 25px;
                                 background-position: top;}
     
     .mktsitiow { background-image: url(img/teclado1420.jpg);
-            background-size: 100%;}
+                background-size: 100%;}
     
     .mktonline { background-image: url(img/mkt1420.jpg);
                 background-position: top;
                 }
+    
     .mktcontact { background-image: url(img/cont1420.jpg);
                 }
     
@@ -1260,7 +1273,6 @@ table.pasitos { margin-bottom: 25px;
     .imgtd { background-size: 64%;}
     
     .tablepqt td { padding-left: 19%; }
-    
     
     
     .footer-social-links { padding: 10px 20px 20px 20px;}
@@ -1350,7 +1362,7 @@ table.pasitos { margin-bottom: 25px;
             background-position: top;
             background-size: 100%;}
     
-.mktsitiow { background-image: url(img/mkt3000.jpg);
+.mktonline { background-image: url(img/mkt3000.jpg);
             background-position: top;
             background-size: 100%;}
     
@@ -1361,6 +1373,15 @@ table.pasitos { margin-bottom: 25px;
 .mktabout { background-image: url(img/grupo3000.jpg);
             background-position: center center;
             background-size: 100%; }
+    
+.control { width: 1024px;}
+    
+    h4.bloque1 { width: 1024px;
+                margin: auto;
+                min-height: 1px;
+                float: none;}
+    
+    .control ul { padding: 0px 0px 0px 60px !important; }
 
     
 }
@@ -1368,25 +1389,35 @@ table.pasitos { margin-bottom: 25px;
 /*2000 breakpoint*/
 @media only screen and (min-width: 2000px) {
     
+    h3 { padding-top: 460px; }
+    
     .branding { width: 1024px;
                 margin: auto;
                 min-height: 1px;}
     
     .logoweb { margin-left: 0px; }
     
-    h4.bloque1 { width: 1024px;
+    /*h4.bloque1 { width: 1024px;
                 margin: auto;
                 min-height: 1px;
-                float: none;}
+                float: none;}*/
     
     .mkt { background-image: url(img/profesional3000.jpg);
-                                background-position: top;}
+                                background-position: top;
+                                }
     
-     #pie { padding-left: 28%;
+    .mkt, .mktsitiow, .mktonline, .mktabout, .mktcontact { min-height: 700px;
+                                                           background-position: top;
+                                                           background-size: 100%;}
+    
+    .design { padding: 100px 10px 90px 10px; }
+    
+     /*#pie { padding-left: 28%;
            padding-right: 28%;
-            }
+            }*/
     
-    
+    .tablepqt td.cellpad { text-align: left;
+                           padding-left: 12%;}
     
     
 }
