@@ -1301,6 +1301,10 @@ table.pasitos { margin-bottom: 25px;
 /*1280 breakpoint*/
 @media only screen and (min-width: 1280px) {
     
+    
+    .branding { width: 920px;
+                margin: auto;}
+    
     h4.span { font-size: 1.5em; }
     
     h4.bloque1 { width: 500px; }
@@ -1349,6 +1353,16 @@ table.pasitos { margin-bottom: 25px;
 
 
 }
+
+/*1380 breakpoint*/
+@media only screen and (min-width: 1380px) {
+    
+    .branding { width: 1050px;}
+    
+}
+    
+    
+    
 /*1421 breakpoint*/
 @media only screen and (min-width: 1421px) {
 

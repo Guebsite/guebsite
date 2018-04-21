@@ -1,7 +1,7 @@
 <nav id="ham">
     <div id="control">
 		<div class="logocel">
-				<img src="<?php bloginfo('template_url') ?>/img/logocel.png" alt="Logo Guebsite">
+				<img src="<?php bloginfo('template_url') ?>/img/guebsitemovile.svg" alt="Logo Guebsite">
         </div>
   <label for="show-menu" class="show-menu">
    <span class="menu-btn"></span>
